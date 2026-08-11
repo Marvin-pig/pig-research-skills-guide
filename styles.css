@@ -264,7 +264,10 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
 .install-card h3 { margin: 3px 0 0; font: 500 26px var(--serif); }
 .install-card ol { margin: 0 0 24px; padding-left: 22px; color: var(--ink-soft); font-size: 12px; }
 .install-card li + li { margin-top: 9px; }
-.install-card > p { margin: 0 0 24px; color: rgba(255,255,255,.68); font-size: 12px; }
+.install-card > p { margin: 0 0 24px; color: var(--ink-soft); font-size: 12px; }
+.install-card-update > p, .install-card-update ol { color: rgba(255,255,255,.72); }
+.install-card li code, .install-proof code { padding: 2px 5px; border-radius: 5px; background: rgba(13,125,115,.1); color: var(--teal-dark); font-size: .9em; }
+.install-card-update li code { background: rgba(255,255,255,.12); color: var(--mint); }
 .install-copy { margin-top: auto; }
 .install-card-update .copy-block { border-color: rgba(255,255,255,.1); background: rgba(0,0,0,.2); }
 .install-card-update .copy-block code { color: rgba(255,255,255,.77); }

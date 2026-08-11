@@ -27,7 +27,7 @@
         </span>
       </a>
       <nav class="top-nav" aria-label="主导航">
-        <a href="#install">安装更新</a>
+        <a href="#install">安装教程</a>
         <a href="#start">三分钟上手</a>
         <a href="#journey">完整流程</a>
         <a href="#prompt-builder">提示词助手</a>
@@ -140,35 +140,33 @@
         <div class="section-shell">
           <div class="section-heading split-heading">
             <div>
-              <p class="eyebrow"><span></span> 安装与更新</p>
-              <h2>先检查、再安装，<br />最后用证据确认成功。</h2>
+              <p class="eyebrow"><span></span> 安装教程</p>
+              <h2>定位文件夹、拖入文件，<br />重启 Agent 即可。</h2>
             </div>
-            <p>普通用户不需要先学命令行。把任一完整的 PIG skill 文件夹交给 Codex，并明确要求它核对结构、保护旧版本和运行资产验证。</p>
+            <p>先让你正在使用的 Agent 找到它实际读取 skill 的位置。以下默认使用 Codex；如果你使用其他 Agent，把提示词中的“Codex”替换成对应名称即可。</p>
           </div>
 
           <div class="install-grid">
             <article class="install-card">
-              <div class="install-card-head"><span>01</span><div><small>NEW INSTALL</small><h3>第一次安装</h3></div></div>
-              <ol>
-                <li>解压收到的 skill 文件夹，不要把私人数据放进安装包。</li>
-                <li>把整个文件夹拖入 Codex，确保关键文件与目录结构完整。</li>
-                <li>发送安装提示词，让 Codex 检查、安装并验证。</li>
-              </ol>
-              <div class="copy-block install-copy"><code>请检查我上传的研究 skill 文件夹是否完整，先核对 SKILL.md、manifest.yaml、版本号和私有数据排除规则，再帮我全局安装。
-安装后请运行技能资产验证，并明确告诉我：安装名称、版本、安装位置、验证结果，以及最早的下一步。</code><button data-copy-from>复制</button></div>
+              <div class="install-card-head"><span>01</span><div><small>LOCATE</small><h3>让 Agent 打开 skills 文件夹</h3></div></div>
+              <p>先把下面这段话发给你的 Agent：</p>
+              <div class="copy-block install-copy"><code>请检查本机 Codex 实际使用的 CODEX_HOME，并告诉我绝对路径。
+然后定位 CODEX_HOME 下的 skills 文件夹；如果不存在就创建它，并在 Finder 或 Windows 文件资源管理器中打开。</code><button data-copy-from>复制</button></div>
             </article>
 
             <article class="install-card install-card-update">
-              <div class="install-card-head"><span>02</span><div><small>SAFE UPDATE</small><h3>更新已有版本</h3></div></div>
-              <p>先识别新旧版本并备份，保留现有项目状态和回滚能力；验证通过后，再清理不需要的旧代码备份。</p>
-              <div class="copy-block install-copy"><code>我上传的是这套研究 skill 的最新版本。请先识别当前已安装版本与新版本，备份旧版本，并采用可回滚的方式正确覆盖。
-必须保留现有项目状态，不得把私人数据复制到安装包或删除。安装后运行完整资产验证；只有验证通过后，才清理不再需要的旧代码备份。请报告版本变化、验证证据和回滚位置。</code><button data-copy-from>复制</button></div>
+              <div class="install-card-head"><span>02</span><div><small>INSTALL</small><h3>拖入文件并重启</h3></div></div>
+              <ol>
+                <li>先把收到的 skill 压缩包完整解压。</li>
+                <li>将解压后的 skill 文件夹拖入刚刚打开的 <code>skills</code> 文件夹。</li>
+                <li>完全退出并重新启动你的 Agent，安装即可生效。</li>
+              </ol>
             </article>
           </div>
 
           <aside class="plain-note install-proof">
             <span class="note-mark">✓</span>
-            <div><strong>安装成功的最低证据</strong><p>回复中应明确出现技能名称、版本、安装位置和验证结果。若资产验证不是 PASS，先修复安装，暂时不要开始真实分析。</p></div>
+            <div><strong>使用其他 Agent？</strong><p>把提示词里的“Codex”和 <code>CODEX_HOME</code> 换成你所使用 Agent 对应的名称与目录规则，再按同样方式找到它的 <code>skills</code> 文件夹。</p></div>
           </aside>
         </div>
       </section>
