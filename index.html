@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PIG Research Skills 使用指南与教程：覆盖 CHARLS、NHANES、NHANES–CHARLS 与 Seven Aging 四套本地研究 skill。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PIG Research Skills｜使用指南与教程" />
+    <meta property="og:description" content="从一句研究想法，到可核查的 Methods + Results 分析结果包。" />
+    <meta property="og:image" content="/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>PIG Research Skills｜使用指南与教程</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="PIG Research Skills 教程首页">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>
+          <strong>PIG Research Skills</strong>
+          <small>四套本地研究工作流</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#install">安装更新</a>
+        <a href="#start">三分钟上手</a>
+        <a href="#journey">完整流程</a>
+        <a href="#prompt-builder">提示词助手</a>
+        <a href="#second-review">双重核对</a>
+      </nav>
+      <a class="header-cta" href="#start">开始学习</a>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> CHARLS · NHANES · 双库 · 七库研究</p>
+          <h1 id="hero-title">把一句研究想法，<br /><em>变成经得起检查的结果。</em></h1>
+          <p class="hero-lead">
+            先选择与你的数据和研究问题匹配的 skill，再用同一套证据优先流程确认数据、方案、分析与成品。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#start">三分钟上手 <span>→</span></a>
+            <a class="button button-ghost" href="#what-is-it">先看看它能做什么</a>
+          </div>
+          <div class="hero-note">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            当前教程覆盖 <strong>4 套 PIG Skill · v5.0.0</strong>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="从研究想法到结果包的流程示意图">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="visual-core">
+            <span class="core-kicker">CHOOSE A SKILL</span>
+            <strong>一个问题，<br />匹配正确数据路线</strong>
+            <small>先选研究范围，再开始</small>
+          </div>
+          <div class="floating-card card-data">
+            <span class="mini-icon">01</span>
+            <div><strong>数据可用吗？</strong><small>先核对，再设计</small></div>
+          </div>
+          <div class="floating-card card-plan">
+            <span class="mini-icon">02</span>
+            <div><strong>方案合理吗？</strong><small>你确认后才执行</small></div>
+          </div>
+          <div class="floating-card card-result">
+            <span class="mini-icon">03</span>
+            <div><strong>结果可靠吗？</strong><small>图表、文字都核查</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="产品特点">
+        <div><strong>4</strong><span>套专门化本地研究 skill</span></div>
+        <div><strong>WF00–12</strong><span>共享同一套研究证据门</span></div>
+        <div><strong>本地</strong><span>真实数据与官方字段是最终准绳</span></div>
+        <div><strong>可核查</strong><span>每个数字、图表和结论都能追溯</span></div>
+      </section>
+
+      <section class="section section-shell" id="what-is-it">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow"><span></span> 先选对入口</p>
+            <h2>四套 skill 共用同一条严谨流程，<br />但服务不同的数据范围。</h2>
+          </div>
+          <p>
+            选择取决于你的数据和科学问题。单库研究优先使用专门 skill；只有两库或多库确实承担不同科学角色时，才进入联合路线。
+          </p>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability-card card-featured">
+            <span class="card-number">01</span>
+            <div class="capability-illustration idea-illustration" aria-hidden="true">
+              <span class="spark spark-a"></span><span class="spark spark-b"></span>
+              <div class="idea-bubble">?</div>
+            </div>
+            <h3>CHARLS PIG</h3>
+            <p>面向 CHARLS 波次 1–5，适合中国中老年纵向或横断面研究、权重与失访审查。</p>
+            <span class="card-tag">/charls-pig</span>
+          </article>
+          <article class="capability-card">
+            <span class="card-number">02</span>
+            <div class="capability-illustration plan-illustration" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
+            <h3>NHANES PIG</h3>
+            <p>面向 NHANES 1999–2023，处理周期、组件、SEQN、复杂抽样、权重及死亡链接分析。</p>
+            <span class="card-tag">/nhanes-pig</span>
+          </article>
+          <article class="capability-card">
+            <span class="card-number">03</span>
+            <div class="capability-illustration result-illustration" aria-hidden="true">
+              <i style="--h: 42%"></i><i style="--h: 70%"></i><i style="--h: 55%"></i><i style="--h: 88%"></i>
+            </div>
+            <h3>NHANES–CHARLS PIG</h3>
+            <p>仅在两库都科学必要时使用；分别估计、复制与三角验证，不默认把个体行直接合并。</p>
+            <span class="card-tag">/nhanes-charls-pig</span>
+          </article>
+          <article class="capability-card">
+            <span class="card-number">04</span>
+            <div class="capability-illustration paper-illustration" aria-hidden="true">
+              <i></i><i></i><i></i><b></b>
+            </div>
+            <h3>Seven Aging PIG</h3>
+            <p>从七个国际老龄数据库中科学选择 2–7 个，用于跨国比较、复制或两阶段综合。</p>
+            <span class="card-tag">/seven-aging-pig-skill</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="install">
+        <div class="section-shell">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow"><span></span> 安装与更新</p>
+              <h2>先检查、再安装，<br />最后用证据确认成功。</h2>
+            </div>
+            <p>普通用户不需要先学命令行。把任一完整的 PIG skill 文件夹交给 Codex，并明确要求它核对结构、保护旧版本和运行资产验证。</p>
+          </div>
+
+          <div class="install-grid">
+            <article class="install-card">
+              <div class="install-card-head"><span>01</span><div><small>NEW INSTALL</small><h3>第一次安装</h3></div></div>
+              <ol>
+                <li>解压收到的 skill 文件夹，不要把私人数据放进安装包。</li>
+                <li>把整个文件夹拖入 Codex，确保关键文件与目录结构完整。</li>
+                <li>发送安装提示词，让 Codex 检查、安装并验证。</li>
+              </ol>
+              <div class="copy-block install-copy"><code>请检查我上传的研究 skill 文件夹是否完整，先核对 SKILL.md、manifest.yaml、版本号和私有数据排除规则，再帮我全局安装。
+安装后请运行技能资产验证，并明确告诉我：安装名称、版本、安装位置、验证结果，以及最早的下一步。</code><button data-copy-from>复制</button></div>
+            </article>
+
+            <article class="install-card install-card-update">
+              <div class="install-card-head"><span>02</span><div><small>SAFE UPDATE</small><h3>更新已有版本</h3></div></div>
+              <p>先识别新旧版本并备份，保留现有项目状态和回滚能力；验证通过后，再清理不需要的旧代码备份。</p>
+              <div class="copy-block install-copy"><code>我上传的是这套研究 skill 的最新版本。请先识别当前已安装版本与新版本，备份旧版本，并采用可回滚的方式正确覆盖。
+必须保留现有项目状态，不得把私人数据复制到安装包或删除。安装后运行完整资产验证；只有验证通过后，才清理不再需要的旧代码备份。请报告版本变化、验证证据和回滚位置。</code><button data-copy-from>复制</button></div>
+            </article>
+          </div>
+
+          <aside class="plain-note install-proof">
+            <span class="note-mark">✓</span>
+            <div><strong>安装成功的最低证据</strong><p>回复中应明确出现技能名称、版本、安装位置和验证结果。若资产验证不是 PASS，先修复安装，暂时不要开始真实分析。</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="start">
+        <div class="section-shell">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow"><span></span> 三分钟上手</p>
+            <h2>第一次使用，只做这三件事</h2>
+            <p>最简单的入口就是自然语言。先把你的真实情况说出来，不必把问题包装得很“学术”。</p>
+          </div>
+
+          <div class="quick-steps">
+            <article class="quick-step">
+              <div class="step-index">1</div>
+              <div>
+                <span class="step-label">先说目标</span>
+                <h3>用一句大白话描述问题</h3>
+                <p>例如：“我想研究退休后社交变少，会不会让记忆下降得更快。”</p>
+              </div>
+              <button class="copy-chip" data-copy="/【skill 名称】\n\n我想研究退休后社交变少，会不会让记忆下降得更快。请先检查对应数据库、年份和变量真的可用，再给我方案；不要直接开始分析。">复制示例</button>
+            </article>
+            <article class="quick-step">
+              <div class="step-index">2</div>
+              <div>
+                <span class="step-label">再做选择</span>
+                <h3>按编号回答关键问题</h3>
+                <p>系统会把推荐项放在第 1 个。你可以回复“1”，也可以说明想改哪里。</p>
+              </div>
+              <div class="reply-demo"><span>你的回复</span><strong>1</strong></div>
+            </article>
+            <article class="quick-step">
+              <div class="step-index">3</div>
+              <div>
+                <span class="step-label">最后才执行</span>
+                <h3>确认方案后，选择推进方式</h3>
+                <p>建议新手选择“分步确认”；熟悉后可选“一键执行”，但它仍会保留所有检查。</p>
+              </div>
+              <div class="mode-pills" aria-label="两种执行方式"><span>分步确认</span><span>一键执行</span></div>
+            </article>
+          </div>
+
+          <aside class="plain-note">
+            <span class="note-mark">!</span>
+            <div>
+              <strong>一句题目不等于完整方案。</strong>
+              <p>系统会先确认“数据里真的有这些信息吗”，再讨论怎么分析。这个停顿是在保护你，不是在拖慢你。</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-shell" id="journey">
+        <div class="section-heading split-heading journey-heading">
+          <div>
+            <p class="eyebrow"><span></span> 完整流程</p>
+            <h2>把 13 个检查阶段，<br />记成 5 段旅程就够了。</h2>
+          </div>
+          <p>
+            页面会显示类似 <code>WF00</code> 的阶段编号。你不必背它们；只要看懂当前在“想清楚、查数据、定方案、做分析”还是“交成果”。
+          </p>
+        </div>
+
+        <div class="journey-layout">
+          <div class="journey-nav" role="tablist" aria-label="研究旅程阶段">
+            <button class="journey-tab is-active" role="tab" aria-selected="true" data-stage="0"><span>01</span>说清问题</button>
+            <button class="journey-tab" role="tab" aria-selected="false" data-stage="1"><span>02</span>确认能做</button>
+            <button class="journey-tab" role="tab" aria-selected="false" data-stage="2"><span>03</span>锁定方案</button>
+            <button class="journey-tab" role="tab" aria-selected="false" data-stage="3"><span>04</span>分析与复查</button>
+            <button class="journey-tab" role="tab" aria-selected="false" data-stage="4"><span>05</span>交付结果</button>
+          </div>
+
+          <div class="journey-stage" aria-live="polite">
+            <div class="stage-topline">
+              <span id="stage-range">WF00</span>
+              <span id="stage-status">现在要做：确认你的真实目标</span>
+            </div>
+            <h3 id="stage-title">先把问题讲明白，不急着谈方法</h3>
+            <p id="stage-description">系统会判断你是需要选题、完善已有方案、直接执行、继续旧项目，还是处理论文工作。</p>
+            <div class="stage-columns">
+              <div>
+                <h4>你需要提供</h4>
+                <ul id="stage-inputs">
+                  <li>大致想研究什么</li>
+                  <li>有没有现成方案或项目</li>
+                  <li>希望只做计划，还是最后得到结果</li>
+                </ul>
+              </div>
+              <div>
+                <h4>你会得到</h4>
+                <ul id="stage-outputs">
+                  <li>本次任务的类型判断</li>
+                  <li>当前所在阶段</li>
+                  <li>下一步只做一件什么事</li>
+                </ul>
+              </div>
+            </div>
+            <div class="stage-example" id="stage-example">
+              <span>你可以这样说</span>
+              <p>“我只有一个方向：孤独与认知变化。请先帮我看看能做哪些靠谱的题目。”</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-ink" id="prompt-builder">
+        <div class="section-shell builder-layout">
+          <div class="builder-intro">
+            <p class="eyebrow eyebrow-light"><span></span> 提示词助手</p>
+            <h2>不知道怎么开口？<br />选一选，就能生成第一句话。</h2>
+            <p>选择最接近你的情况。生成的文字可以直接复制给 Codex，再补上你自己的主题。</p>
+            <div class="privacy-badge"><span>✓</span> 不会把参与者数据写进提示词</div>
+          </div>
+
+          <form class="prompt-card" id="prompt-form">
+            <fieldset>
+              <legend>1. 选择与你的数据匹配的 skill</legend>
+              <div class="choice-row skill-choice-row" data-choice="skill">
+                <button type="button" class="choice is-selected" data-value="charls">CHARLS</button>
+                <button type="button" class="choice" data-value="nhanes">NHANES</button>
+                <button type="button" class="choice" data-value="nhanes-charls">NHANES–CHARLS</button>
+                <button type="button" class="choice" data-value="seven-aging">Seven Aging</button>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>2. 你现在手里有什么？</legend>
+              <div class="choice-row" data-choice="situation">
+                <button type="button" class="choice is-selected" data-value="idea">只有想法</button>
+                <button type="button" class="choice" data-value="protocol">已有方案</button>
+                <button type="button" class="choice" data-value="project">已有项目</button>
+                <button type="button" class="choice" data-value="paper">已有论文</button>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>3. 这次最想得到什么？</legend>
+              <div class="choice-row" data-choice="goal">
+                <button type="button" class="choice is-selected" data-value="topics">靠谱选题</button>
+                <button type="button" class="choice" data-value="plan">完整方案</button>
+                <button type="button" class="choice" data-value="results">真实结果</button>
+                <button type="button" class="choice" data-value="review">检查改进</button>
+              </div>
+            </fieldset>
+            <label class="topic-field">
+              <span>4. 你的主题（可以很简单）</span>
+              <input id="topic-input" type="text" placeholder="例如：睡眠与记忆变化" maxlength="80" />
+            </label>
+            <div class="generated-prompt">
+              <div class="generated-label"><span>已生成</span><button type="button" id="copy-prompt">复制提示词</button></div>
+              <p id="prompt-output">/charls-pig
+
+我目前只有一个研究想法，主题是“我的研究主题”。请先核对本地字典和数据是否真的支持，再给我 3–5 个可行选题；不要直接开始分析。</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-shell" id="modes">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow"><span></span> 常见使用场景</p>
+          <h2>六种真实起点，都有一句稳妥开场</h2>
+          <p>点击卡片查看一条可直接复制的开场白。</p>
+        </div>
+        <div class="scenario-list">
+          <details open>
+            <summary><span class="scenario-icon">A</span><div><strong>我有一篇想借鉴的论文</strong><small>迁移研究逻辑与证据链，不复制文字或盲目照搬变量</small></div><i>+</i></summary>
+            <div class="scenario-content">
+              <p>上传范文 PDF；如果有补充材料、分析方案或附表，也一并提供。</p>
+              <div class="copy-block"><code>/【skill 名称】
+
+请深度理解我上传的范文及补充材料的研究思路、问题链、分析逻辑和输出结构，并迁移到我关注的【主题】。回答前先提出必要问题；能够准确复述我的目标后，再给出 3–5 个可行选题和完整方案。必须先核对本地字典、真实可用数据库、年份与变量。</code><button data-copy-from>复制</button></div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="scenario-icon">B</span><div><strong>我只有宽泛方向</strong><small>先找“有数据、能比较、值得做”的方向</small></div><i>+</i></summary>
+            <div class="scenario-content">
+              <p>适合只有“认知、抑郁、慢病、社会参与”这类宽泛兴趣的人。</p>
+              <div class="copy-block"><code>/【skill 名称】
+
+我关注【研究方向】，目前还没有明确题目。请先查询内置字典并做只输出汇总信息的数据可行性检查，列出可用变量、数据库和年份；先让我筛选，再给出 3–5 个真正可行的方向。不要直接开始分析。</code><button data-copy-from>复制</button></div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="scenario-icon">C</span><div><strong>我有一句研究想法</strong><small>把 topic seed 变成完整、可执行的方案</small></div><i>+</i></summary>
+            <div class="scenario-content">
+              <p>系统会先核对数据可行性，再展示完整设计和全部拟生成图表并等你确认。</p>
+              <div class="copy-block"><code>/【skill 名称】
+
+我的初步想法是：【写下你的想法】。请把它当作 topic seed，不要直接分析。先核对可用数据库、年份、变量、权重和联合可行性，再整理成完整研究设计；同时展示主图、附图、主表和附表计划，并等我确认。</code><button data-copy-from>复制</button></div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="scenario-icon">D</span><div><strong>我已经写好方案</strong><small>保留核心创新，同时修复不能执行的部分</small></div><i>+</i></summary>
+            <div class="scenario-content">
+              <p>把方案放在工作区并说明路径；先审查，不要直接执行。</p>
+              <div class="copy-block"><code>/【skill 名称】
+
+请审查【方案文件路径】。优先保留我的核心创新，同时检查数据源、变量、年份、人群、比较方式、权重、抽样设计、诊断、敏感性分析和拟生成结果是否真实可行。先给出逐项审查和推荐修改；不要直接执行。</code><button data-copy-from>复制</button></div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="scenario-icon">E</span><div><strong>我要继续旧项目</strong><small>先看真实文件判断阶段，不只相信状态文字</small></div><i>+</i></summary>
+            <div class="scenario-content">
+              <p>系统会从已有成果和验证记录判断真实阶段，然后只给一个最早有效下一步。</p>
+              <div class="copy-block"><code>/【skill 名称】
+
+请继续【项目文件夹】。先审计现有文件和验证记录，根据实质性产物判断真实 WF 阶段，不要只相信状态文字。列出已通过证据、阻断或待确认项，并只给出一个最早有效下一步。</code><button data-copy-from>复制</button></div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="scenario-icon">F</span><div><strong>我要处理论文工作</strong><small>查文献、核引用、润色、预审或回复审稿意见</small></div><i>+</i></summary>
+            <div class="scenario-content">
+              <p>说明本次任务和边界即可；保留现有统计结果，不扩大范围。</p>
+              <div class="copy-block"><code>/【skill 名称】
+
+请处理【论文文件路径】。本次只做【文献查找 / 引用核对 / 语言润色 / 模拟审稿 / 回复审稿意见】。请保留现有统计结果与证据边界，不要擅自扩大任务范围。</code><button data-copy-from>复制</button></div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="section section-ink execution-section" id="execution">
+        <div class="section-shell">
+          <div class="section-heading split-heading heading-light">
+            <div>
+              <p class="eyebrow eyebrow-light"><span></span> 方案确认后如何推进</p>
+              <h2>想快一点可以，<br />但不能把科学门槛删掉。</h2>
+            </div>
+            <p>一键模式只减少重复停顿。无论结果阳性、阴性、跨库不一致或无法估计，都必须保留并如实报告。</p>
+          </div>
+
+          <div class="execution-grid">
+            <article>
+              <span class="execution-kicker">先看可行性与方向</span>
+              <h3>锁定方案后做经验探索</h3>
+              <p>目标是判断思路能否落地，不是“直到得到阳性结果”。</p>
+              <div class="copy-block dark-copy-block"><code>我选择“一键最优执行”。本轮目标是评估该研究思路的经验可行性与结果方向。请严格按已确认设计执行到完整 Methods + Results 分析结果包，并生成全部已编号图表。无论结果阳性、阴性、跨库不一致或无法估计，都必须如实保留。本轮不要进入完整 manuscript 路线。</code><button data-copy-from>复制</button></div>
+            </article>
+            <article>
+              <span class="execution-kicker">设计已经验证</span>
+              <h3>自动采用已展示的推荐项</h3>
+              <p>只在真实阻断、主要设计改变或输出清单必须变更时暂停。</p>
+              <div class="copy-block dark-copy-block"><code>我接受已经展示并通过验证的完整研究设计、Question–Evidence Graph 和全部主文/补充材料清单。请选择“一键最优执行”，自动采用已展示的推荐项；仅在真实阻断、需要主要设计改变或输出清单必须变更时暂停。请执行到 Methods + Results 分析结果包通过审计并交付，不自动生成完整论文。</code><button data-copy-from>复制</button></div>
+            </article>
+            <article class="execution-checklist">
+              <span class="execution-kicker">需要完整流程化落地</span>
+              <h3>分步确认八个关键环节</h3>
+              <ol>
+                <li>官方证据与数据库范围</li><li>变量、分母、年份与协调</li><li>人群与样本流程</li><li>模型、权重与诊断</li><li>全部输出编号与顺序</li><li>经验分析</li><li>结果与偏离复核</li><li>稿件和发布范围</li>
+              </ol>
+            </article>
+          </div>
+
+          <p class="execution-footnote"><strong>编号以现场为准。</strong> 同时写出选项名称，不要只回复一个孤立数字。</p>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="results">
+        <div class="section-shell">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow"><span></span> 最后能得到什么</p>
+              <h2>“一键执行”不是一篇凭空出现的论文。</h2>
+            </div>
+            <p>它交付的是一套经过核对的“方法与结果分析包”。确认这套结果无误后，你再决定是否继续生成完整论文。</p>
+          </div>
+          <div class="deliverable-board">
+            <div class="deliverable-main">
+              <span class="board-label">核心交付</span>
+              <h3>Methods + Results<br />分析结果包</h3>
+              <p>能够追溯每个数字从哪里来，也能继续修改和投稿。</p>
+              <div class="file-stack" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+            <div class="deliverable-items">
+              <article><span>01</span><div><strong>完整方法</strong><small>别人可以按说明重做</small></div></article>
+              <article><span>02</span><div><strong>客观结果文字</strong><small>保留不显著和不一致结果</small></div></article>
+              <article><span>03</span><div><strong>全部计划图表</strong><small>主文和补充材料不遗漏</small></div></article>
+              <article><span>04</span><div><strong>源数据与代码</strong><small>每个成品都能追溯</small></div></article>
+              <article><span>05</span><div><strong>检查与修正记录</strong><small>不是一句“已检查”</small></div></article>
+              <article><span>06</span><div><strong>可编辑文件</strong><small>Word、SVG、PDF、PNG 等</small></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-shell" id="second-review">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow"><span></span> 双重核对模式</p>
+            <h2>让外部模型挑逻辑，<br />让本地 skill 判定能否落地。</h2>
+          </div>
+          <p>两者职责不同，不能互相替代。网页版 GPT 可以发现问题链和表达漏洞；字段、年份、权重和样本能否执行，仍以本地字典、真实数据与验证器为准。</p>
+        </div>
+
+        <div class="review-flow" aria-label="双重核对五步流程">
+          <article><span>01</span><strong>从 Codex 取材料</strong><p>完整方案、可行性摘要、拟生成结果清单和最弱设计环节。</p></article>
+          <i>→</i>
+          <article><span>02</span><strong>只分享非敏感内容</strong><p>研究问题、变量定义、统计计划和输出清单。</p></article>
+          <i>→</i>
+          <article><span>03</span><strong>外部独立审查</strong><p>先复述目标，再逐项检查问题链、方法和图表。</p></article>
+          <i>→</i>
+          <article><span>04</span><strong>带回本地判断</strong><p>区分可采纳、需修改、与事实冲突或不适用。</p></article>
+          <i>→</i>
+          <article><span>05</span><strong>以本地证据定案</strong><p>未经确认，不跨越设计变更门。</p></article>
+        </div>
+
+        <div class="review-prompts">
+          <article>
+            <span class="step-label">给网页版 GPT</span>
+            <div class="copy-block"><code>请仔细审查我提供的研究方案、数据可行性摘要和拟生成结果清单，并结合已发表研究检查其问题链、分析设计与图表计划。回答前先提出必要问题；能够准确复述我的目标后，再给出创新、硬性风险、可执行修改和逐项输出计划。不要要求上传参与者级私人数据。</code><button data-copy-from>复制</button></div>
+          </article>
+          <article>
+            <span class="step-label">带回 Codex</span>
+            <div class="copy-block"><code>请逐条评估这份外部审查建议。以本地字典、真实数据可行性、官方字段语义、权重与抽样设计契约为最终依据。把建议分为：可直接采纳、修改后可采纳、与本地事实冲突、当前不适用；说明证据和对已确认设计的影响。未经我确认，不要跨越设计变更门。</code><button data-copy-from>复制</button></div>
+          </article>
+        </div>
+
+        <aside class="plain-note review-boundary"><span class="note-mark">!</span><div><strong>边界提醒</strong><p>外部模型不能证明本地字段存在或分析已经运行；本地 skill 也不能把外部建议当成高于真实数据和官方文档的权威。</p></div></aside>
+      </section>
+
+      <section class="section section-shell" id="glossary">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow"><span></span> 看懂系统回复</p>
+            <h2>只记住 4 个状态词</h2>
+          </div>
+          <p>遇到英文状态时，不用紧张。它们描述的是“这一步能不能继续”，不是对你研究能力的评价。</p>
+        </div>
+        <div class="status-grid">
+          <article class="status-pass"><span>PASS</span><h3>已经通过</h3><p>有实际检查证据，可以继续下一步。</p></article>
+          <article class="status-review"><span>NEEDS_REVIEW</span><h3>需要确认</h3><p>目前有可用材料，但还需要人来判断。</p></article>
+          <article class="status-blocked"><span>BLOCKED</span><h3>暂时卡住</h3><p>缺少关键数据或条件，解决后才能继续。</p></article>
+          <article class="status-na"><span>NOT_APPLICABLE</span><h3>这次不适用</h3><p>不是失败，只是当前问题不需要这一项。</p></article>
+        </div>
+        <div class="wf-cheatsheet">
+          <strong>WF 是什么？</strong>
+          <p><code>WF00–WF02</code> 想清楚与定方案 · <code>WF03–WF06</code> 把数据和方法锁定 · <code>WF07–WF09</code> 分析与检查 · <code>WF10–WF12</code> 做成品与交付</p>
+        </div>
+        <div class="term-grid" aria-label="术语小字典">
+          <article><code>topic seed</code><p>一句题目、假设或初步想法；还不是完整研究设计。</p></article>
+          <article><code>PECO / PICO</code><p>把人群、因素或干预、比较和结果说清楚。</p></article>
+          <article><code>estimand</code><p>真正想估计的目标量，包括人群、时间、比较和效应尺度。</p></article>
+          <article><code>predesign feasibility</code><p>设计前的汇总式数据可行性检查，不做建模。</p></article>
+          <article><code>Question–Evidence Graph</code><p>问题、估计量、模型、诊断、输出和 Results 之间的证据图。</p></article>
+          <article><code>Methods + Results</code><p>一键分析的固定交付；可复现、可审计，但不等于完整论文。</p></article>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="faq">
+        <div class="section-shell faq-layout">
+          <div class="section-heading faq-heading">
+            <p class="eyebrow"><span></span> 常见问题</p>
+            <h2>开始前，你可能还想问</h2>
+          </div>
+          <div class="faq-list">
+            <details open><summary>“一键执行”会跳过确认吗？<span>+</span></summary><p>不会。完整设计必须先展示、验证并由你接受。一键模式只减少已接受默认项的重复停顿。</p></details>
+            <details><summary>系统会自动生成完整论文吗？<span>+</span></summary><p>不会。真实分析完成后，先交付“方法与结果分析包”。只有你明确选择继续，才会进入完整论文写作。</p></details>
+            <details><summary>结果不显著会被删掉吗？<span>+</span></summary><p>不会。零结果、方向相反、跨库不一致、诊断失败或无法估计都必须保留，并限制结论边界。</p></details>
+            <details><summary>为什么说有变量却不能直接分析？<span>+</span></summary><p>字段存在只证明有一列数据。还要核对问题原文、单位、编码、分母、跳题、代理访谈、波次和 join 契约。</p></details>
+            <details><summary>为什么一键模式中途停了？<span>+</span></summary><p>通常意味着遇到真实阻断、需要主要设计改变，或必须修改已确认的输出清单。这正是一键模式仍要停下的情况。</p></details>
+            <details><summary>怎样找到系统生成但没有展示的文件？<span>+</span></summary><p>要求系统列出当前项目状态、数据可行性、完整设计、拟生成结果矩阵和交付索引的实际文件位置，并说明每个文件的验证状态。</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta section-shell">
+        <div>
+          <p class="eyebrow eyebrow-light"><span></span> READY WHEN YOU ARE</p>
+          <h2>从一句真实的问题开始。</h2>
+          <p>先选择与你的数据匹配的 skill，再告诉它你关心什么。</p>
+        </div>
+        <a class="button button-paper" href="#prompt-builder">生成我的第一句话 <span>→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>PIG Research Skills</strong><span>CHARLS · NHANES · NHANES–CHARLS · Seven Aging</span></div>
+      <p>四套 skill 共用证据优先的 <code>WF00–WF12</code> 研究工作流。</p>
+      <a href="#top">回到顶部 ↑</a>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">已复制到剪贴板</div>
+    <script src="app.js"></script>
+  </body>
+</html>
