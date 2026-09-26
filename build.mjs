@@ -9,7 +9,7 @@ await rm(dist, { recursive: true, force: true });
 await mkdir(join(dist, "client"), { recursive: true });
 await mkdir(join(dist, "server"), { recursive: true });
 
-for (const file of ["index.html", "styles.css", "app.js", "og.png"]) {
+for (const file of ["index.html", "styles.css", "app.js"]) {
   await copyFile(join(root, file), join(dist, "client", file));
 }
 

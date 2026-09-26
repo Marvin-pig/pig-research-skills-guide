@@ -1,22 +1,19 @@
-# PIG Research Skills 使用指南与教程网页
+# PIG Research Skills 9.2.0 教程
 
-这是一个可离线打开、也可发布到 Sites 的交互式中文教程，统一覆盖 `charls-pig`、`nhanes-pig`、`nhanes-charls-pig` 和 `seven-aging-pig-skill` 四套本地研究工作流。
+中文客户指南，覆盖七个产品的 macOS / Windows x64 完整安装、首次 Tavotto 配置、研究选题与详细方案、三种推进方式、图表编辑及全文交付。
 
-## 打开方式
+线上地址：https://marvin-pig.github.io/pig-research-skills-guide/#install
 
-直接双击 `index.html`，或在本目录运行：
+GitHub Pages 使用 `main` 分支根目录。`index.html`、`styles.css`、`app.js` 可直接静态部署；网站不读取本机数据，不收集输入，也不托管客户数据 ZIP。包名、体积和操作步骤对应 PIG 9.2.0，新的产品版本发布时需同步核对安装入口与功能边界。
 
-```bash
-python3 -m http.server 8765
+本地预览：
+
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-然后访问 `http://127.0.0.1:8765/`。
+访问 http://127.0.0.1:8765/ 。也可直接打开 `index.html`；禁用 JavaScript 时仍能阅读安装教程，产品切换与提示词生成需要 JavaScript。
 
-## 文件
+`npm run build` 保留备用部署的 `dist/client` 和 `dist/server` 输出；GitHub Pages 直接读取根目录。维护记录、浏览器截图和验证日志保存在本仓库外。
 
-- `index.html`：教程内容与页面结构
-- `styles.css`：响应式视觉样式
-- `app.js`：流程切换、提示词生成、复制按钮与折叠内容
-- `og.png`：网页分享预览图
-
-网页本身不会读取、上传或保存任何参与者数据。
+Windows 原生首装与画布显示尚待真机验证；页面不将 macOS 或文件格式检查表述为 Windows 执行成功。教程不扩展各数据库实际提供的数据范围，也不提供数据的公开下载或重新授权。

@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="PIG Research Skills 使用指南与教程：覆盖 CHARLS、NHANES、NHANES–CHARLS 与 Seven Aging 四套本地研究 skill。"
+      content="PIG Research Skills 使用指南与教程：适配 PIG 9.2.0 七套数据库 skill：macOS / Windows 完整安装、Tavotto 人工改图、选题到完整论文。"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="PIG Research Skills｜使用指南与教程" />
-    <meta property="og:description" content="从一句研究想法，到可核查的 Methods + Results 分析结果包。" />
-    <meta property="og:image" content="/og.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <title>PIG Research Skills｜使用指南与教程</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:title" content="PIG Research Skills 9.2.0｜安装与研究教程" />
+    <meta property="og:description" content="一次完整安装，从研究选题、统计图表到完整论文；按需进入 Tavotto 手动调整图。" />
+    <meta property="og:url" content="https://marvin-pig.github.io/pig-research-skills-guide/" />
+    <meta name="twitter:card" content="summary" />
+    <title>PIG Research Skills 9.2.0｜安装与研究教程</title>
+    <link rel="stylesheet" href="styles.css?v=9.2.0" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到正文</a>
@@ -23,7 +23,7 @@
         <span class="brand-mark" aria-hidden="true">P</span>
         <span>
           <strong>PIG Research Skills</strong>
-          <small>四套本地研究工作流</small>
+          <small>七套数据库 skill · v9.2.0</small>
         </span>
       </a>
       <nav class="top-nav" aria-label="主导航">
@@ -31,26 +31,27 @@
         <a href="#start">三分钟上手</a>
         <a href="#journey">完整流程</a>
         <a href="#prompt-builder">提示词助手</a>
-        <a href="#second-review">双重核对</a>
+        <a href="#tavotto">人工改图</a><a href="#faq">常见问题</a>
       </nav>
-      <a class="header-cta" href="#start">开始学习</a>
+      <a class="header-cta" href="#install">开始安装</a>
     </header>
 
     <main id="main">
+      <noscript><p class="section-shell">安装与研究教程可直接阅读。启用 JavaScript 后可切换产品文件名、研究阶段并生成或复制提示词。</p></noscript>
       <section class="hero section-shell" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> CHARLS · NHANES · 双库 · 七库研究</p>
+          <p class="eyebrow"><span></span> 临床 · 围术期 · 生物样本库 · 人群研究</p>
           <h1 id="hero-title">把一句研究想法，<br /><em>变成经得起检查的结果。</em></h1>
           <p class="hero-lead">
-            先选择与你的数据和研究问题匹配的 skill，再用同一套证据优先流程确认数据、方案、分析与成品。
+            一次完整安装，把研究问题、数据核查、统计图表和论文写作连起来。你决定研究范围和参与方式，助手在真实证据上推进。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#start">三分钟上手 <span>→</span></a>
+            <a class="button button-primary" href="#install">安装 9.2.0 <span>→</span></a>
             <a class="button button-ghost" href="#what-is-it">先看看它能做什么</a>
           </div>
           <div class="hero-note">
             <span class="pulse-dot" aria-hidden="true"></span>
-            当前教程覆盖 <strong>4 套 PIG Skill · v5.0.0</strong>
+            当前教程覆盖 <strong>7 套 PIG Skill · v9.2.0</strong>
           </div>
         </div>
 
@@ -68,7 +69,7 @@
           </div>
           <div class="floating-card card-plan">
             <span class="mini-icon">02</span>
-            <div><strong>方案合理吗？</strong><small>你确认后才执行</small></div>
+            <div><strong>方案合理吗？</strong><small>方案清楚，按约定推进</small></div>
           </div>
           <div class="floating-card card-result">
             <span class="mini-icon">03</span>
@@ -78,170 +79,83 @@
       </section>
 
       <section class="trust-strip" aria-label="产品特点">
-        <div><strong>4</strong><span>套专门化本地研究 skill</span></div>
-        <div><strong>WF00–12</strong><span>共享同一套研究证据门</span></div>
+        <div><strong>7</strong><span>套完整数据库 skill</span></div>
+        <div><strong>2</strong><span>种系统安装包 · macOS / Windows x64</span></div>
         <div><strong>本地</strong><span>真实数据与官方字段是最终准绳</span></div>
         <div><strong>可核查</strong><span>每个数字、图表和结论都能追溯</span></div>
       </section>
 
       <section class="section section-shell" id="what-is-it">
-        <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow"><span></span> 先选对入口</p>
-            <h2>四套 skill 共用同一条严谨流程，<br />但服务不同的数据范围。</h2>
-          </div>
-          <p>
-            选择取决于你的数据和科学问题。单库研究优先使用专门 skill；只有两库或多库确实承担不同科学角色时，才进入联合路线。
-          </p>
-        </div>
-
-        <div class="capability-grid">
-          <article class="capability-card card-featured">
-            <span class="card-number">01</span>
-            <div class="capability-illustration idea-illustration" aria-hidden="true">
-              <span class="spark spark-a"></span><span class="spark spark-b"></span>
-              <div class="idea-bubble">?</div>
-            </div>
-            <h3>CHARLS PIG</h3>
-            <p>面向 CHARLS 波次 1–5，适合中国中老年纵向或横断面研究、权重与失访审查。</p>
-            <span class="card-tag">/charls-pig</span>
-          </article>
-          <article class="capability-card">
-            <span class="card-number">02</span>
-            <div class="capability-illustration plan-illustration" aria-hidden="true">
-              <i></i><i></i><i></i>
-            </div>
-            <h3>NHANES PIG</h3>
-            <p>面向 NHANES 1999–2023，处理周期、组件、SEQN、复杂抽样、权重及死亡链接分析。</p>
-            <span class="card-tag">/nhanes-pig</span>
-          </article>
-          <article class="capability-card">
-            <span class="card-number">03</span>
-            <div class="capability-illustration result-illustration" aria-hidden="true">
-              <i style="--h: 42%"></i><i style="--h: 70%"></i><i style="--h: 55%"></i><i style="--h: 88%"></i>
-            </div>
-            <h3>NHANES–CHARLS PIG</h3>
-            <p>仅在两库都科学必要时使用；分别估计、复制与三角验证，不默认把个体行直接合并。</p>
-            <span class="card-tag">/nhanes-charls-pig</span>
-          </article>
-          <article class="capability-card">
-            <span class="card-number">04</span>
-            <div class="capability-illustration paper-illustration" aria-hidden="true">
-              <i></i><i></i><i></i><b></b>
-            </div>
-            <h3>Seven Aging PIG</h3>
-            <p>从七个国际老龄数据库中科学选择 2–7 个，用于跨国比较、复制或两阶段综合。</p>
-            <span class="card-tag">/seven-aging-pig-skill</span>
-          </article>
-        </div>
-      </section>
+  <div class="section-heading split-heading"><div><p class="eyebrow"><span></span> 选择数据库</p><h2>七个入口，<br />按研究问题选一套。</h2></div><p>联合包已经包含对应数据库，无需同时安装各单库包。不同数据库中的人并不能直接互认；INSPIRE 的手术也不能直接当成 ICU stay。</p></div>
+  <div class="capability-grid product-grid"><article class="capability-card card-featured"><span class="card-number">01</span><h3>MIMIC · eICU · INSPIRE</h3><p>重症与围术期研究。内置 MIMIC-IV 3.1、eICU-CRD 2.0、INSPIRE 1.4.2；可选单库或设计驱动的跨库验证。</p><code class="card-tag">$mimic-eicu-inspire-pig-skill</code></article>
+<article class="capability-card "><span class="card-number">02</span><h3>MIMIC-IV</h3><p>面向 MIMIC-IV 3.1 hosp 与 ICU 数据，核对患者、住院和 ICU stay 的层级与时间关系。</p><code class="card-tag">$mimic-pig-skill</code></article>
+<article class="capability-card "><span class="card-number">03</span><h3>UK Biobank</h3><p>支持包内表型、登记事件、重复测量、蛋白组、代谢组与 PRS；以实际字段及样本覆盖为准。</p><code class="card-tag">$ukb-pig-skill</code></article>
+<article class="capability-card "><span class="card-number">04</span><h3>CHARLS</h3><p>中国中老年人群的横断面与纵向研究，关注波次、抽样权重、失访与测量差异。</p><code class="card-tag">$charls-pig</code></article>
+<article class="capability-card "><span class="card-number">05</span><h3>NHANES</h3><p>美国健康与营养调查，核对调查周期、组件、SEQN、复杂抽样与适用权重。</p><code class="card-tag">$nhanes-pig</code></article>
+<article class="capability-card "><span class="card-number">06</span><h3>NHANES · CHARLS</h3><p>两库各有明确科学角色时，分别估计、比较或复制；不默认直接拼接个体记录。</p><code class="card-tag">$nhanes-charls-pig</code></article>
+<article class="capability-card "><span class="card-number">07</span><h3>Seven Aging</h3><p>从七个老年数据库中选择有依据的组合，开展跨国比较、复制或两阶段综合。</p><code class="card-tag">$seven-aging-pig-skill</code></article></div>
+  <aside class="plain-note"><span class="note-mark">i</span><div><strong>工具能力与数据范围分别核对。</strong><p>MIMIC 的住院与 ICU 表不等于已包含影像、波形、病历文本或组学文件。新增数据模块需另行提供并核对；字段存在也不等于研究已经可行。</p></div></aside>
+</section>
 
       <section class="section section-soft" id="install">
-        <div class="section-shell">
-          <div class="section-heading split-heading">
-            <div>
-              <p class="eyebrow"><span></span> 安装教程</p>
-              <h2>定位文件夹、拖入文件，<br />重启 Agent 即可。</h2>
-            </div>
-            <p>先让你正在使用的 Agent 找到它实际读取 skill 的位置。以下默认使用 Codex；如果你使用其他 Agent，把提示词中的“Codex”替换成对应名称即可。</p>
-          </div>
+<div class="section-shell">
+  <div class="section-heading split-heading"><div><p class="eyebrow"><span></span> 9.2.0 完整安装</p><h2>选对系统包，<br />运行一次完整安装。</h2></div><p>适用于 Codex 桌面应用。安装器准备本包登记的研究环境与官方 Tavotto；之后无需再单独适配 Tavotto。先<a href="https://developers.openai.com/codex/app/">安装并登录 Codex</a>，首次安装保持联网。</p></div>
+  <div class="package-picker">
+    <label for="package-select">你收到的是哪一套 skill？</label><select id="package-select"><option value="mimic-eicu-inspire-pig-skill">MIMIC · eICU · INSPIRE</option><option value="mimic-pig-skill">MIMIC-IV</option><option value="ukb-pig-skill">UK Biobank</option><option value="charls-pig">CHARLS</option><option value="nhanes-pig">NHANES</option><option value="nhanes-charls-pig">NHANES · CHARLS</option><option value="seven-aging-pig-skill">Seven Aging</option></select>
+    <p>向提供方获取有使用权限的 <strong>9.2.0 系统专用完整 ZIP</strong>。本教程不提供数据库下载。</p>
+    <div class="package-result" aria-live="polite"><span>macOS <code id="package-mac">mimic-eicu-inspire-pig-skill-macOS.zip</code></span><span>Windows x64 <code id="package-windows">mimic-eicu-inspire-pig-skill-Windows-x64.zip</code></span><p id="package-size">每个 ZIP 约 25.30 GiB，解压约 25.30 GiB。</p></div>
+    <p class="space-note">空间按 ZIP + 解压副本 + 安装副本计算，另给软件依赖及研究输出留余量；建议在 ZIP 和解压目录之外，再预留至少一份解压体积加 10 GiB。多个 skill 共用软件环境，但各有完整数据副本。</p>
+  </div>
+  <div class="install-grid">
+    <article class="install-card"><div class="install-card-head"><span>Mac</span><div><small>APPLE SILICON / INTEL</small><h3>macOS 安装</h3></div></div>
+      <ol><li>完整解压名称以 <code>-macOS.zip</code> 结尾的包。</li><li>保留 skill 文件夹及旁边的安装入口和教程；双击外层 <code>Install.command</code>。</li><li>在安装窗口核对专用图稿目录，输入 <code>YES</code> 确认一次。</li><li>缺少 R 或 Git 时，完成官方 R / Apple Command Line Tools 安装窗口，然后等待检查结束。</li><li>看到 <code>Full installation COMPLETE</code> 后，彻底退出并重新打开 Codex。</li></ol>
+      <p>新装 R 的官方安装包要求 Apple Silicon macOS 14+、Intel macOS 11+；Codex 自身的系统要求以官方说明为准。已有满足要求的环境会复用。</p>
+    </article>
+    <article class="install-card install-card-update"><div class="install-card-head"><span>Win</span><div><small>WINDOWS x64</small><h3>Windows 安装</h3></div></div>
+      <ol><li>选择 <code>-Windows-x64.zip</code>，右键 → 全部解压，建议使用 <code>C:\PIGInstall</code> 等短路径。</li><li>在解压后的目录双击外层 <code>Install.cmd</code>。不要在 ZIP 内直接运行。</li><li>核对专用图稿目录，输入 <code>YES</code> 确认；安装器准备对应系统的软件环境。</li><li>保持窗口打开，直到出现 <code>Full installation COMPLETE</code>。</li><li>彻底退出并重开 Codex；若仍继承旧环境，退出系统登录并重新登录一次。</li></ol>
+      <p>安装器面向 Windows 10/11 x64、PowerShell 5.1+；Codex 自身要求以官方说明为准。Windows ARM 尚未原生验证。不要复制 Mac 的 Python/R 环境到 Windows。</p>
+    </article>
+  </div>
+  <div class="install-outcome"><div><span class="step-label">完成时会看到</span><strong>Full installation COMPLETE</strong><p>本包登记的环境、插件、数据检查与研究输出检查全部通过。账号登录和必要的系统安装窗口由你完成。</p></div><div><span class="step-label">未完成时</span><strong>Full installation INCOMPLETE</strong><p>窗口列出具体阶段和日志。完成系统安装或恢复网络后，重跑同一个入口继续；健康组件会复用。</p></div></div>
+  <aside class="plain-note install-proof"><span class="note-mark">✓</span><div><strong>Tavotto 随首装配置，高权限模式可以保留。</strong><p>首次只确认一个具体的专用图稿目录，默认 <code>PIG-Figures</code>。后续助手自动准备选定图的脚本和汇总输入。无需逐图再配置插件，也不需要为了它切换 Codex 的权限模式；安装不会自动打开画布。</p></div></aside>
+  <details class="install-details"><summary>已装旧版、换电脑或只拖过 skill 文件夹？</summary><p>用新版对应系统的完整 ZIP 运行同一安装入口，补齐环境并更新 skill。原研究项目放在独立工作区，继续研究前让助手读取已有方案与结果。只拖入文件夹、只运行底层 <code>scripts/install.py</code>，都不能作为完整首装已完成的依据。</p><p>Skill 默认位于当前用户的 <code>.codex/skills</code>；设置了 <code>CODEX_HOME</code> 时使用其 <code>skills</code> 子目录。软件设置与安装日志分别位于 macOS 的 <code>~/Library/Application Support/PIG</code> 或 Windows 的 <code>%LOCALAPPDATA%\PIG</code>。</p><p>ZIP 使用 ZIP64；存储磁盘须支持大于 4 GB 的文件。换电脑重新运行对应系统安装包，不复制旧机器的二进制环境。其他 Agent 的技能目录、工具接入与权限机制需要单独验证。</p></details>
+  <p class="validation-note">验证范围：macOS 已完成本机完整安装和代表包解压运行；Windows 包完成文件、编码、路径和载荷检查，原生 Windows 首装及画布显示仍待真机验收。完整安装覆盖当前包已登记功能；联网检索和新增研究方法仍可能需要额外条件。</p>
+</div></section>
 
-          <div class="install-grid">
-            <article class="install-card">
-              <div class="install-card-head"><span>01</span><div><small>LOCATE</small><h3>让 Agent 打开 skills 文件夹</h3></div></div>
-              <p>先把下面这段话发给你的 Agent：</p>
-              <div class="copy-block install-copy"><code>请检查本机 Codex 实际使用的 CODEX_HOME，并告诉我绝对路径。
-然后定位 CODEX_HOME 下的 skills 文件夹；如果不存在就创建它，并在 Finder 或 Windows 文件资源管理器中打开。</code><button data-copy-from>复制</button></div>
-            </article>
+      <section class="section" id="start"><div class="section-shell">
+  <div class="section-heading centered-heading"><p class="eyebrow"><span></span> 安装后上手</p><h2>说清目标，再决定怎么推进。</h2><p>在 Codex 输入框用 <code>$</code> 选择对应 skill，也可明确说出 skill 名称和研究目标。已有项目可以直接接续。</p></div>
+  <div class="quick-steps">
+    <article class="quick-step"><div class="step-index">1</div><div><span class="step-label">先说目标</span><h3>从选题，或从现有材料开始</h3><p>没有题目时，先检索文献、核对数据，给出通常 3–5 个有区别的候选及首选理由；不为凑数制造题目。</p></div><button class="copy-chip" data-copy="$mimic-eicu-inspire-pig-skill
 
-            <article class="install-card install-card-update">
-              <div class="install-card-head"><span>02</span><div><small>INSTALL</small><h3>拖入文件并重启</h3></div></div>
-              <ol>
-                <li>先把收到的 skill 压缩包完整解压。</li>
-                <li>将解压后的 skill 文件夹拖入刚刚打开的 <code>skills</code> 文件夹。</li>
-                <li>完全退出并重新启动你的 Agent，安装即可生效。</li>
-              </ol>
-            </article>
-          </div>
-
-          <aside class="plain-note install-proof">
-            <span class="note-mark">✓</span>
-            <div><strong>使用其他 Agent？</strong><p>把提示词里的“Codex”和 <code>CODEX_HOME</code> 换成你所使用 Agent 对应的名称与目录规则，再按同样方式找到它的 <code>skills</code> 文件夹。</p></div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section" id="start">
-        <div class="section-shell">
-          <div class="section-heading centered-heading">
-            <p class="eyebrow"><span></span> 三分钟上手</p>
-            <h2>第一次使用，只做这三件事</h2>
-            <p>最简单的入口就是自然语言。先把你的真实情况说出来，不必把问题包装得很“学术”。</p>
-          </div>
-
-          <div class="quick-steps">
-            <article class="quick-step">
-              <div class="step-index">1</div>
-              <div>
-                <span class="step-label">先说目标</span>
-                <h3>用一句大白话描述问题</h3>
-                <p>例如：“我想研究退休后社交变少，会不会让记忆下降得更快。”</p>
-              </div>
-              <button class="copy-chip" data-copy="/【skill 名称】\n\n我想研究退休后社交变少，会不会让记忆下降得更快。请先检查对应数据库、年份和变量真的可用，再给我方案；不要直接开始分析。">复制示例</button>
-            </article>
-            <article class="quick-step">
-              <div class="step-index">2</div>
-              <div>
-                <span class="step-label">再做选择</span>
-                <h3>按编号回答关键问题</h3>
-                <p>系统会把推荐项放在第 1 个。你可以回复“1”，也可以说明想改哪里。</p>
-              </div>
-              <div class="reply-demo"><span>你的回复</span><strong>1</strong></div>
-            </article>
-            <article class="quick-step">
-              <div class="step-index">3</div>
-              <div>
-                <span class="step-label">最后才执行</span>
-                <h3>确认方案后，选择推进方式</h3>
-                <p>建议新手选择“分步确认”；熟悉后可选“一键执行”，但它仍会保留所有检查。</p>
-              </div>
-              <div class="mode-pills" aria-label="两种执行方式"><span>分步确认</span><span>一键执行</span></div>
-            </article>
-          </div>
-
-          <aside class="plain-note">
-            <span class="note-mark">!</span>
-            <div>
-              <strong>一句题目不等于完整方案。</strong>
-              <p>系统会先确认“数据里真的有这些信息吗”，再讨论怎么分析。这个停顿是在保护你，不是在拖慢你。</p>
-            </div>
-          </aside>
-        </div>
-      </section>
+我关注重症患者肾功能变化与预后。请先核对内置数据和近期文献，比较 3–5 个可行选题，明确推荐与限制；这一步先讨论选题。">复制三库示例</button></article>
+    <article class="quick-step"><div class="step-index">2</div><div><span class="step-label">再审阅方案</span><h3>选题确定后，拿到详细研究设计</h3><p>包括数据版本、库的角色、人群与时间零点、字段映射、结局、缺失处理、模型、诊断、敏感性分析，以及每项表图计划。</p></div><div class="reply-demo"><span>直接回复</span><strong>1 或说明修改</strong></div></article>
+    <article class="quick-step"><div class="step-index">3</div><div><span class="step-label">约定范围与参与方式</span><h3>只到分析，还是做到完整论文？</h3><p>看过方案后说明交付终点，再选连续执行、关键节点讨论或分步推进。已有明确决定持续有效，普通技术修复由助手完成。</p></div><div class="mode-pills"><span>连续执行</span><span>关键节点讨论</span><span>分步推进</span></div></article>
+  </div><aside class="plain-note"><span class="note-mark">1</span><div><strong>推荐放第一，自定义放最后。</strong><p>实质性回复尽量附编号建议，通常四项；你可回复数字或自然语言。推荐不是自动同意，选题候选与方案也分别确认。连续执行中的进度建议不会反复要求开工。</p></div></aside>
+</div></section>
 
       <section class="section section-shell" id="journey">
         <div class="section-heading split-heading journey-heading">
           <div>
             <p class="eyebrow"><span></span> 完整流程</p>
-            <h2>把 13 个检查阶段，<br />记成 5 段旅程就够了。</h2>
+            <h2>五段研究旅程，<br />发现问题可以回到前一步。</h2>
           </div>
           <p>
-            页面会显示类似 <code>WF00</code> 的阶段编号。你不必背它们；只要看懂当前在“想清楚、查数据、定方案、做分析”还是“交成果”。
+            循环由实际证据推动：发现定义或时间窗口问题，就回到方案；模型诊断不充分，就补分析。只重做受影响的部分，保留阴性、不一致与无法估计的结果。
           </p>
         </div>
 
         <div class="journey-layout">
           <div class="journey-nav" role="tablist" aria-label="研究旅程阶段">
-            <button class="journey-tab is-active" role="tab" aria-selected="true" data-stage="0"><span>01</span>说清问题</button>
-            <button class="journey-tab" role="tab" aria-selected="false" data-stage="1"><span>02</span>确认能做</button>
-            <button class="journey-tab" role="tab" aria-selected="false" data-stage="2"><span>03</span>锁定方案</button>
-            <button class="journey-tab" role="tab" aria-selected="false" data-stage="3"><span>04</span>分析与复查</button>
-            <button class="journey-tab" role="tab" aria-selected="false" data-stage="4"><span>05</span>交付结果</button>
+            <button class="journey-tab is-active" role="tab" aria-selected="true" data-stage="0" id="journey-tab-0" aria-controls="journey-panel" tabindex="0"><span>01</span>说清问题</button>
+            <button class="journey-tab" role="tab" aria-selected="false" data-stage="1" id="journey-tab-1" aria-controls="journey-panel" tabindex="-1"><span>02</span>确认能做</button>
+            <button class="journey-tab" role="tab" aria-selected="false" data-stage="2" id="journey-tab-2" aria-controls="journey-panel" tabindex="-1"><span>03</span>锁定方案</button>
+            <button class="journey-tab" role="tab" aria-selected="false" data-stage="3" id="journey-tab-3" aria-controls="journey-panel" tabindex="-1"><span>04</span>分析与复查</button>
+            <button class="journey-tab" role="tab" aria-selected="false" data-stage="4" id="journey-tab-4" aria-controls="journey-panel" tabindex="-1"><span>05</span>交付结果</button>
           </div>
 
-          <div class="journey-stage" aria-live="polite">
+          <div class="journey-stage" id="journey-panel" role="tabpanel" aria-labelledby="journey-tab-0">
             <div class="stage-topline">
-              <span id="stage-range">WF00</span>
+              <span id="stage-range">选题与证据</span>
               <span id="stage-status">现在要做：确认你的真实目标</span>
             </div>
             <h3 id="stage-title">先把问题讲明白，不急着谈方法</h3>
@@ -260,7 +174,7 @@
                 <ul id="stage-outputs">
                   <li>本次任务的类型判断</li>
                   <li>当前所在阶段</li>
-                  <li>下一步只做一件什么事</li>
+                  <li>首选行动与可行替代</li>
                 </ul>
               </div>
             </div>
@@ -277,15 +191,18 @@
           <div class="builder-intro">
             <p class="eyebrow eyebrow-light"><span></span> 提示词助手</p>
             <h2>不知道怎么开口？<br />选一选，就能生成第一句话。</h2>
-            <p>选择最接近你的情况。生成的文字可以直接复制给 Codex，再补上你自己的主题。</p>
-            <div class="privacy-badge"><span>✓</span> 不会把参与者数据写进提示词</div>
+            <p>选择最接近你的情况。生成的文字可以直接复制给 Codex。只填写研究方向，不填写参与者记录；需要材料时在本地研究工作区提供。</p>
+            <div class="privacy-badge"><span>✓</span> 本页仅在浏览器中生成文字，不发送到服务器</div>
           </div>
 
           <form class="prompt-card" id="prompt-form">
             <fieldset>
               <legend>1. 选择与你的数据匹配的 skill</legend>
               <div class="choice-row skill-choice-row" data-choice="skill">
-                <button type="button" class="choice is-selected" data-value="charls">CHARLS</button>
+                <button type="button" class="choice is-selected" data-value="criticalcare">临床三库</button>
+                <button type="button" class="choice" data-value="mimic">MIMIC-IV</button>
+                <button type="button" class="choice" data-value="ukb">UK Biobank</button>
+                <button type="button" class="choice" data-value="charls">CHARLS</button>
                 <button type="button" class="choice" data-value="nhanes">NHANES</button>
                 <button type="button" class="choice" data-value="nhanes-charls">NHANES–CHARLS</button>
                 <button type="button" class="choice" data-value="seven-aging">Seven Aging</button>
@@ -306,18 +223,20 @@
                 <button type="button" class="choice is-selected" data-value="topics">靠谱选题</button>
                 <button type="button" class="choice" data-value="plan">完整方案</button>
                 <button type="button" class="choice" data-value="results">真实结果</button>
+                <button type="button" class="choice" data-value="manuscript">完整论文</button>
                 <button type="button" class="choice" data-value="review">检查改进</button>
               </div>
             </fieldset>
+            <fieldset id="mode-field" hidden><legend>4. 方案确认后希望如何推进？</legend><div class="choice-row" data-choice="mode"><button type="button" class="choice is-selected" data-value="continuous">连续执行</button><button type="button" class="choice" data-value="checkpoints">关键节点讨论</button><button type="button" class="choice" data-value="stepwise">分步推进</button></div></fieldset>
             <label class="topic-field">
-              <span>4. 你的主题（可以很简单）</span>
-              <input id="topic-input" type="text" placeholder="例如：睡眠与记忆变化" maxlength="80" />
+              <span>你的主题（可以很简单）</span>
+              <input id="topic-input" type="text" placeholder="例如：肾功能变化与重症预后" maxlength="80" />
             </label>
             <div class="generated-prompt">
               <div class="generated-label"><span>已生成</span><button type="button" id="copy-prompt">复制提示词</button></div>
-              <p id="prompt-output">/charls-pig
+              <p id="prompt-output">$mimic-eicu-inspire-pig-skill
 
-我目前只有一个研究想法，主题是“我的研究主题”。请先核对本地字典和数据是否真的支持，再给我 3–5 个可行选题；不要直接开始分析。</p>
+我目前只有一个研究想法，主题是“我的研究主题”。请先核对本地字典和数据是否真的支持，再给我 3–5 个可行选题，明确首选理由和待核查事项；这一步先讨论选题。</p>
             </div>
           </form>
         </div>
@@ -334,25 +253,25 @@
             <summary><span class="scenario-icon">A</span><div><strong>我有一篇想借鉴的论文</strong><small>迁移研究逻辑与证据链，不复制文字或盲目照搬变量</small></div><i>+</i></summary>
             <div class="scenario-content">
               <p>上传范文 PDF；如果有补充材料、分析方案或附表，也一并提供。</p>
-              <div class="copy-block"><code>/【skill 名称】
+              <div class="copy-block"><code>$【skill 名称】
 
-请深度理解我上传的范文及补充材料的研究思路、问题链、分析逻辑和输出结构，并迁移到我关注的【主题】。回答前先提出必要问题；能够准确复述我的目标后，再给出 3–5 个可行选题和完整方案。必须先核对本地字典、真实可用数据库、年份与变量。</code><button data-copy-from>复制</button></div>
+请深度理解我上传的范文及补充材料的研究思路、问题链、分析逻辑和输出结构，并迁移到我关注的【主题】。先比较适合迁移的研究问题，给出 3–5 个可行选题及推荐；选题确定后再形成完整方案。只有缺少影响研究的关键条件时集中提问。必须先核对本地字典、真实可用数据库、年份与变量。</code><button data-copy-from>复制</button></div>
             </div>
           </details>
           <details>
             <summary><span class="scenario-icon">B</span><div><strong>我只有宽泛方向</strong><small>先找“有数据、能比较、值得做”的方向</small></div><i>+</i></summary>
             <div class="scenario-content">
               <p>适合只有“认知、抑郁、慢病、社会参与”这类宽泛兴趣的人。</p>
-              <div class="copy-block"><code>/【skill 名称】
+              <div class="copy-block"><code>$【skill 名称】
 
-我关注【研究方向】，目前还没有明确题目。请先查询内置字典并做只输出汇总信息的数据可行性检查，列出可用变量、数据库和年份；先让我筛选，再给出 3–5 个真正可行的方向。不要直接开始分析。</code><button data-copy-from>复制</button></div>
+我关注【研究方向】，目前还没有明确题目。请先查询内置字典并做只输出汇总信息的数据可行性检查，列出可用变量、数据库和年份；结合近期文献给出 3–5 个真正可行的方向和首选理由，让我比较选择。不要直接开始分析。</code><button data-copy-from>复制</button></div>
             </div>
           </details>
           <details>
             <summary><span class="scenario-icon">C</span><div><strong>我有一句研究想法</strong><small>把 topic seed 变成完整、可执行的方案</small></div><i>+</i></summary>
             <div class="scenario-content">
               <p>系统会先核对数据可行性，再展示完整设计和全部拟生成图表并等你确认。</p>
-              <div class="copy-block"><code>/【skill 名称】
+              <div class="copy-block"><code>$【skill 名称】
 
 我的初步想法是：【写下你的想法】。请把它当作 topic seed，不要直接分析。先核对可用数据库、年份、变量、权重和联合可行性，再整理成完整研究设计；同时展示主图、附图、主表和附表计划，并等我确认。</code><button data-copy-from>复制</button></div>
             </div>
@@ -361,7 +280,7 @@
             <summary><span class="scenario-icon">D</span><div><strong>我已经写好方案</strong><small>保留核心创新，同时修复不能执行的部分</small></div><i>+</i></summary>
             <div class="scenario-content">
               <p>把方案放在工作区并说明路径；先审查，不要直接执行。</p>
-              <div class="copy-block"><code>/【skill 名称】
+              <div class="copy-block"><code>$【skill 名称】
 
 请审查【方案文件路径】。优先保留我的核心创新，同时检查数据源、变量、年份、人群、比较方式、权重、抽样设计、诊断、敏感性分析和拟生成结果是否真实可行。先给出逐项审查和推荐修改；不要直接执行。</code><button data-copy-from>复制</button></div>
             </div>
@@ -369,17 +288,17 @@
           <details>
             <summary><span class="scenario-icon">E</span><div><strong>我要继续旧项目</strong><small>先看真实文件判断阶段，不只相信状态文字</small></div><i>+</i></summary>
             <div class="scenario-content">
-              <p>系统会从已有成果和验证记录判断真实阶段，然后只给一个最早有效下一步。</p>
-              <div class="copy-block"><code>/【skill 名称】
+              <p>系统会从已有成果和验证记录判断真实阶段，再给出推荐行动与可选调整方式。</p>
+              <div class="copy-block"><code>$【skill 名称】
 
-请继续【项目文件夹】。先审计现有文件和验证记录，根据实质性产物判断真实 WF 阶段，不要只相信状态文字。列出已通过证据、阻断或待确认项，并只给出一个最早有效下一步。</code><button data-copy-from>复制</button></div>
+请继续【项目文件夹】。先审计现有文件和验证记录，根据实际产物判断研究进度，不要只相信状态文字。列出已通过证据、阻断或待确认项，并给出有依据的推荐下一步、备选行动和自定义入口。沿用已确认的方案与执行范围。</code><button data-copy-from>复制</button></div>
             </div>
           </details>
           <details>
             <summary><span class="scenario-icon">F</span><div><strong>我要处理论文工作</strong><small>查文献、核引用、润色、预审或回复审稿意见</small></div><i>+</i></summary>
             <div class="scenario-content">
               <p>说明本次任务和边界即可；保留现有统计结果，不扩大范围。</p>
-              <div class="copy-block"><code>/【skill 名称】
+              <div class="copy-block"><code>$【skill 名称】
 
 请处理【论文文件路径】。本次只做【文献查找 / 引用核对 / 语言润色 / 模拟审稿 / 回复审稿意见】。请保留现有统计结果与证据边界，不要擅自扩大任务范围。</code><button data-copy-from>复制</button></div>
             </div>
@@ -387,69 +306,35 @@
         </div>
       </section>
 
-      <section class="section section-ink execution-section" id="execution">
-        <div class="section-shell">
-          <div class="section-heading split-heading heading-light">
-            <div>
-              <p class="eyebrow eyebrow-light"><span></span> 方案确认后如何推进</p>
-              <h2>想快一点可以，<br />但不能把科学门槛删掉。</h2>
-            </div>
-            <p>一键模式只减少重复停顿。无论结果阳性、阴性、跨库不一致或无法估计，都必须保留并如实报告。</p>
-          </div>
+      <section class="section section-ink execution-section" id="execution"><div class="section-shell">
+  <div class="section-heading split-heading heading-light"><div><p class="eyebrow eyebrow-light"><span></span> 方案确认后</p><h2>交付范围与参与频率，<br />分别说清楚。</h2></div><p>可以只做到图表，也可以委托完成全文与投稿材料。选择连续执行后，常规取数、诊断和修复自主推进；重要科学转向带着证据讨论。</p></div>
+  <div class="execution-grid">
+    <article><span class="execution-kicker">CONTINUOUS</span><h3>连续执行</h3><p>适合希望省心推进的人。执行到约定产物；不因每次展示建议而停顿。</p><div class="copy-block dark-copy-block"><code>我已看过并接受这份研究设计。请按此方案连续执行到完整论文与投稿材料，完成真实分析、必要诊断、图表、全文写作、引用和数字一致性检查。常规技术修复自主处理；影响主要人群、结局或估计目标的重要变更先带证据与我讨论。投稿包保持整洁，不代我向期刊投稿。</code><button data-copy-from>复制</button></div></article>
+    <article><span class="execution-kicker">CHECKPOINTS</span><h3>关键节点讨论</h3><p>适合希望参与主要科学判断的人。节点之间连续工作，到约定成果时讨论。</p><div class="copy-block dark-copy-block"><code>我接受这份方案，希望在两个节点讨论：样本与定义核查完成后、主结果及诊断完成后。节点之间请连续推进，带着真实产物、推荐和影响来讨论；本项目目标是完整论文。</code><button data-copy-from>复制</button></div></article>
+    <article><span class="execution-kicker">STEP BY STEP</span><h3>分步推进</h3><p>适合边做边学习，或需要控制本轮范围的人。完成当前阶段后再决定下一步。</p><div class="copy-block dark-copy-block"><code>请分步推进。本轮先完成已确认方案下的取数、样本流程与变量质量核查，给我真实结果、限制和编号建议；暂不进入模型分析。</code><button data-copy-from>复制</button></div></article>
+  </div><p class="execution-footnote">直接回复本轮数字或自然语言都可以。<strong>已有明确委托持续有效；推荐项排第一不代表自动获得批准。</strong></p>
+</div></section>
 
-          <div class="execution-grid">
-            <article>
-              <span class="execution-kicker">先看可行性与方向</span>
-              <h3>锁定方案后做经验探索</h3>
-              <p>目标是判断思路能否落地，不是“直到得到阳性结果”。</p>
-              <div class="copy-block dark-copy-block"><code>我选择“一键最优执行”。本轮目标是评估该研究思路的经验可行性与结果方向。请严格按已确认设计执行到完整 Methods + Results 分析结果包，并生成全部已编号图表。无论结果阳性、阴性、跨库不一致或无法估计，都必须如实保留。本轮不要进入完整 manuscript 路线。</code><button data-copy-from>复制</button></div>
-            </article>
-            <article>
-              <span class="execution-kicker">设计已经验证</span>
-              <h3>自动采用已展示的推荐项</h3>
-              <p>只在真实阻断、主要设计改变或输出清单必须变更时暂停。</p>
-              <div class="copy-block dark-copy-block"><code>我接受已经展示并通过验证的完整研究设计、Question–Evidence Graph 和全部主文/补充材料清单。请选择“一键最优执行”，自动采用已展示的推荐项；仅在真实阻断、需要主要设计改变或输出清单必须变更时暂停。请执行到 Methods + Results 分析结果包通过审计并交付，不自动生成完整论文。</code><button data-copy-from>复制</button></div>
-            </article>
-            <article class="execution-checklist">
-              <span class="execution-kicker">需要完整流程化落地</span>
-              <h3>分步确认八个关键环节</h3>
-              <ol>
-                <li>官方证据与数据库范围</li><li>变量、分母、年份与协调</li><li>人群与样本流程</li><li>模型、权重与诊断</li><li>全部输出编号与顺序</li><li>经验分析</li><li>结果与偏离复核</li><li>稿件和发布范围</li>
-              </ol>
-            </article>
-          </div>
+      <section class="section section-soft" id="results"><div class="section-shell">
+  <div class="section-heading split-heading"><div><p class="eyebrow"><span></span> 研究成果</p><h2>从真实结果出发，<br />完成你约定的论文。</h2></div><p>方案阶段已明确做到全文时，分析后继续写作、查证与复核，不强制停在 Methods + Results。只委托分析时则交付该范围。作者、伦理和投稿事实需据实提供。</p></div>
+  <div class="deliverable-board"><div class="deliverable-main"><span class="board-label">按约定范围交付</span><h3>详细全文<br />与正式图表</h3><p>研究问题、方法、结果与讨论对应同一份真实证据。阴性结果也能完成研究，不预写结论。</p><div class="file-stack" aria-hidden="true"><i></i><i></i><i></i></div></div><div class="deliverable-items">
+    <article><span>01</span><div><strong>研究设计与分析计划</strong><small>人群、时间、字段、模型和表图安排</small></div></article>
+    <article><span>02</span><div><strong>真实估计与必要诊断</strong><small>效应量、不确定性、分母及局限</small></div></article>
+    <article><span>03</span><div><strong>正文与补充图表</strong><small>从已登记的统计结果生成</small></div></article>
+    <article><span>04</span><div><strong>完整论文</strong><small>按委托完成摘要、引言、方法、结果、讨论与引用</small></div></article>
+    <article><span>05</span><div><strong>可编辑文件</strong><small>Word 表格、原生图代码及适用的 Tavotto 图</small></div></article>
+    <article><span>06</span><div><strong>复现材料</strong><small>代码、定义、版本及验证材料单独保留</small></div></article>
+  </div></div>
+  <aside class="plain-note"><span class="note-mark">✓</span><div><strong>投稿目录只放投稿所需文件。</strong><p>正文、定稿图表、图注、补充材料及适用的投稿附件进入投稿包；安装日志、临时结果、测试输出、图形会话和工作记录留在研究工作区。软件许可和数据来源说明继续保留；实际提交期刊另需明确授权。</p></div></aside>
+</div></section>
 
-          <p class="execution-footnote"><strong>编号以现场为准。</strong> 同时写出选项名称，不要只回复一个孤立数字。</p>
-        </div>
-      </section>
 
-      <section class="section section-soft" id="results">
-        <div class="section-shell">
-          <div class="section-heading split-heading">
-            <div>
-              <p class="eyebrow"><span></span> 最后能得到什么</p>
-              <h2>“一键执行”不是一篇凭空出现的论文。</h2>
-            </div>
-            <p>它交付的是一套经过核对的“方法与结果分析包”。确认这套结果无误后，你再决定是否继续生成完整论文。</p>
-          </div>
-          <div class="deliverable-board">
-            <div class="deliverable-main">
-              <span class="board-label">核心交付</span>
-              <h3>Methods + Results<br />分析结果包</h3>
-              <p>能够追溯每个数字从哪里来，也能继续修改和投稿。</p>
-              <div class="file-stack" aria-hidden="true"><i></i><i></i><i></i></div>
-            </div>
-            <div class="deliverable-items">
-              <article><span>01</span><div><strong>完整方法</strong><small>别人可以按说明重做</small></div></article>
-              <article><span>02</span><div><strong>客观结果文字</strong><small>保留不显著和不一致结果</small></div></article>
-              <article><span>03</span><div><strong>全部计划图表</strong><small>主文和补充材料不遗漏</small></div></article>
-              <article><span>04</span><div><strong>源数据与代码</strong><small>每个成品都能追溯</small></div></article>
-              <article><span>05</span><div><strong>检查与修正记录</strong><small>不是一句“已检查”</small></div></article>
-              <article><span>06</span><div><strong>可编辑文件</strong><small>Word、SVG、PDF、PNG 等</small></div></article>
-            </div>
-          </div>
-        </div>
-      </section>
+<section class="section section-shell" id="tavotto">
+  <div class="section-heading split-heading"><div><p class="eyebrow"><span></span> Tavotto 人工改图</p><h2>图交付之后，<br />你还可以亲手调。</h2></div><p>完整安装已配置官方 Tavotto。助手先交付图和解释，再提供编辑入口；你选定图号后，它准备编辑副本、打开画布并协助导出。</p></div>
+  <div class="editing-layout"><div class="next-menu"><span class="step-label">图交付后的回复示例</span><h3>这张图已生成。接下来可以：</h3><ol><li><strong>沿用当前版本，继续结果解释（推荐）</strong></li><li><strong>使用 Tavotto 手动调整指定图</strong><span>调整颜色、字体、图例或布局</span></li><li><strong>核对图注、分母和数据对应关系</strong></li><li><strong>自定义：说明你希望怎样继续</strong></li></ol><p>菜单会随研究进度变化。多图可一起选择，不逐图反复询问。</p></div>
+  <div class="edit-instructions"><h3>从打开到回到论文</h3><ol><li>回复“用 Tavotto 调整图 2”，或选择相应编号。</li><li>助手检查当前工具和已授权目录，准备独立脚本及本图必要的汇总输入。</li><li>进入画布后，使用展开 / 全屏入口获得更大编辑区域；具体侧边栏布局由宿主支持决定。</li><li>完成修改后告诉助手导出。它保存完整样式、检查重放，并把定稿图更新到对应论文位置。</li></ol><div class="copy-block"><code>请用 Tavotto 打开图 2，我想手动调整颜色、字体和图例位置；保留统计数值。完成编辑后，帮我导出并更新论文中的对应图。</code><button data-copy-from>复制</button></div></div></div>
+  <div class="edit-boundaries"><article><h3>Matplotlib 图</h3><p>满足可编辑契约的独立脚本可进入 Tavotto。助手自动整理路径和输入，用户不必手工搬文件或修改插件缓存。</p></article><article><h3>R 图与表格</h3><p>R / ggplot 图按原生代码调整，必要时从核对后的结果准备 Matplotlib 编辑版。表格使用 gtsummary / modelsummary 等汇总，输出可编辑 Word；不把 R 对象或表格当成 Tavotto 原生对象。</p></article><article><h3>改变统计内容</h3><p>颜色和排版可以编辑；更改数值、定义或分析结论须回到上游研究步骤。数据更新后重新生成编辑版本，避免旧图混入稿件。</p></article></div>
+</section>
 
       <section class="section section-shell" id="second-review">
         <div class="section-heading split-heading">
@@ -465,7 +350,7 @@
           <i>→</i>
           <article><span>02</span><strong>只分享非敏感内容</strong><p>研究问题、变量定义、统计计划和输出清单。</p></article>
           <i>→</i>
-          <article><span>03</span><strong>外部独立审查</strong><p>先复述目标，再逐项检查问题链、方法和图表。</p></article>
+          <article><span>03</span><strong>外部独立审查</strong><p>结合已给材料逐项检查问题链、方法和图表。</p></article>
           <i>→</i>
           <article><span>04</span><strong>带回本地判断</strong><p>区分可采纳、需修改、与事实冲突或不适用。</p></article>
           <i>→</i>
@@ -475,7 +360,7 @@
         <div class="review-prompts">
           <article>
             <span class="step-label">给网页版 GPT</span>
-            <div class="copy-block"><code>请仔细审查我提供的研究方案、数据可行性摘要和拟生成结果清单，并结合已发表研究检查其问题链、分析设计与图表计划。回答前先提出必要问题；能够准确复述我的目标后，再给出创新、硬性风险、可执行修改和逐项输出计划。不要要求上传参与者级私人数据。</code><button data-copy-from>复制</button></div>
+            <div class="copy-block"><code>请仔细审查我提供的研究方案、数据可行性摘要和拟生成结果清单，并结合已发表研究检查其问题链、分析设计与图表计划。请给出创新、主要风险、可执行修改和逐项输出计划；缺少关键条件时再集中提问。不要要求上传参与者级私人数据。</code><button data-copy-from>复制</button></div>
           </article>
           <article>
             <span class="step-label">带回 Codex</span>
@@ -501,8 +386,8 @@
           <article class="status-na"><span>NOT_APPLICABLE</span><h3>这次不适用</h3><p>不是失败，只是当前问题不需要这一项。</p></article>
         </div>
         <div class="wf-cheatsheet">
-          <strong>WF 是什么？</strong>
-          <p><code>WF00–WF02</code> 想清楚与定方案 · <code>WF03–WF06</code> 把数据和方法锁定 · <code>WF07–WF09</code> 分析与检查 · <code>WF10–WF12</code> 做成品与交付</p>
+          <strong>按实际产物判断进度</strong>
+          <p>选题与证据 → 详细方案 → 数据与模型 → 图表与解释 → 全文与审查。发现问题时回到受影响步骤，不用为了阶段编号重做已经有效的工作。</p>
         </div>
         <div class="term-grid" aria-label="术语小字典">
           <article><code>topic seed</code><p>一句题目、假设或初步想法；还不是完整研究设计。</p></article>
@@ -510,26 +395,14 @@
           <article><code>estimand</code><p>真正想估计的目标量，包括人群、时间、比较和效应尺度。</p></article>
           <article><code>predesign feasibility</code><p>设计前的汇总式数据可行性检查，不做建模。</p></article>
           <article><code>Question–Evidence Graph</code><p>问题、估计量、模型、诊断、输出和 Results 之间的证据图。</p></article>
-          <article><code>Methods + Results</code><p>一键分析的固定交付；可复现、可审计，但不等于完整论文。</p></article>
+          <article><code>Methods + Results</code><p>方法与结果分析包；当委托范围包括全文时，继续完成其他章节和投稿材料。</p></article>
         </div>
       </section>
 
-      <section class="section section-soft" id="faq">
-        <div class="section-shell faq-layout">
-          <div class="section-heading faq-heading">
-            <p class="eyebrow"><span></span> 常见问题</p>
-            <h2>开始前，你可能还想问</h2>
-          </div>
-          <div class="faq-list">
-            <details open><summary>“一键执行”会跳过确认吗？<span>+</span></summary><p>不会。完整设计必须先展示、验证并由你接受。一键模式只减少已接受默认项的重复停顿。</p></details>
-            <details><summary>系统会自动生成完整论文吗？<span>+</span></summary><p>不会。真实分析完成后，先交付“方法与结果分析包”。只有你明确选择继续，才会进入完整论文写作。</p></details>
-            <details><summary>结果不显著会被删掉吗？<span>+</span></summary><p>不会。零结果、方向相反、跨库不一致、诊断失败或无法估计都必须保留，并限制结论边界。</p></details>
-            <details><summary>为什么说有变量却不能直接分析？<span>+</span></summary><p>字段存在只证明有一列数据。还要核对问题原文、单位、编码、分母、跳题、代理访谈、波次和 join 契约。</p></details>
-            <details><summary>为什么一键模式中途停了？<span>+</span></summary><p>通常意味着遇到真实阻断、需要主要设计改变，或必须修改已确认的输出清单。这正是一键模式仍要停下的情况。</p></details>
-            <details><summary>怎样找到系统生成但没有展示的文件？<span>+</span></summary><p>要求系统列出当前项目状态、数据可行性、完整设计、拟生成结果矩阵和交付索引的实际文件位置，并说明每个文件的验证状态。</p></details>
-          </div>
-        </div>
-      </section>
+      <section class="section section-soft" id="faq"><div class="section-shell faq-layout">
+<div class="section-heading faq-heading"><p class="eyebrow"><span></span> 常见问题与恢复</p><h2>从哪里继续，<br />这里说清楚。</h2><p>先看实际安装状态与失败阶段，避免反复手工配置。</p></div><div class="faq-list"><details open><summary>只有拖入文件夹，没有运行安装入口，算完成了吗？<span>+</span></summary><p>文件夹能被发现，不代表软件环境和 Tavotto 已准备好。请用 9.2.0 系统专用 ZIP 的外层安装入口补齐；以 Full installation COMPLETE 为完成标志。</p></details><details ><summary>Tavotto 要另外安装吗？一定要改 Codex 权限吗？<span>+</span></summary><p>完整首装已包含官方插件、引擎、启动命令与专用图稿目录配置。首次核对并批准一个具体目录即可，保留 Codex 高权限模式；安装后彻底重启应用。更换或迁移图稿目录时，重新确认新范围。</p></details><details ><summary>编辑时提示目录拒绝，但没有看到权限弹窗？<span>+</span></summary><p>先确认完整安装是否成功、是否彻底重启 Codex，以及图稿是否在首次已批准的目录中。这个返回不能证明你点过拒绝。让助手查看当前连接与安装记录；同一原因不反复重试。目录移动或外接盘未挂载时，恢复原位置或重新运行安装器确认新位置。</p></details><details ><summary>Mac 提示无法打开脚本，或 Windows 阻止运行？<span>+</span></summary><p>确认使用对应系统的包且已经完整解压。Mac 可在系统允许的情况下右键打开，或在终端用 sh 执行 Install.command。Windows 使用 Install.cmd，它仅为本次 PowerShell 进程设置执行策略；组织策略仍需按所在单位要求处理，不要求关闭系统安全保护。</p></details><details ><summary>安装中断或长时间停在依赖准备怎么办？<span>+</span></summary><p>首次下载 R、科研及图册依赖可能较久，保持窗口打开并查看当前阶段和日志。INCOMPLETE 会指出失败位置；恢复网络或完成官方系统窗口后，重跑同一入口继续。把下面的诊断提示发给本地 Codex，无需将数据上传到网页。</p></details><details ><summary>数据要依赖原始目录吗？可以离线研究吗？<span>+</span></summary><p>对应包内已包含完整数据与必要字典，分析不依赖制作机器或原始数据目录。已配置的本地分析环境可以离线使用；首次安装软件、检索近期文献和其他网络工具需要联网。</p></details><details ><summary>组学、影像或“所有 MIMIC 数据”都能直接分析吗？<span>+</span></summary><p>以包内实际数据为准：MIMIC 单库版包含 MIMIC-IV 3.1 hosp 和 ICU，不能据此推断有影像、文本、波形或组学。UKB 的组学能力也受实际字段和样本覆盖限制。需要其他模块时先提供并完成相应适配。</p></details><details ><summary>连续执行会直接做到论文吗？<span>+</span></summary><p>交付范围和推进方式分别确定。你看过方案后明确要求做到全文，助手就完成该范围；只要求分析就停在分析。不会强制每次停在方法与结果，也不会把一句选题当作全流程授权。</p></details><details ><summary>可以直接回复“1”吗？<span>+</span></summary><p>可以，当前选项清楚时数字或自然语言都有效。通常 1 是推荐，最后是自定义。需要选择时等待真实回复；连续执行中的进度建议不会撤销已有委托。</p></details><details ><summary>为什么有字段仍不能直接做研究？<span>+</span></summary><p>还需核对编码、单位、测量时点、观察单位、可分析人数、事件和缺失。跨库先确定每个数据库的角色及可比性；独立数据库不自动合并患者，INSPIRE 手术层级也不等同于 ICU 层级。</p></details><details ><summary>使用其他 Agent 或换电脑怎么办？<span>+</span></summary><p>新电脑选择对应系统 ZIP 重新完整安装。当前完整安装器面向 Codex；其他 Agent 的技能发现、MCP 工具与图形显示需单独核对，不能只替换名称就认定兼容。</p></details><details ><summary>安装和验证文件会混进投稿包吗？<span>+</span></summary><p>不会作为投稿内容收进去。软件环境和安装日志在本机 PIG 配置目录，研究过程与复现记录放工作区；投稿目录只保留需要提交的稿件、定稿图表、补充材料与相应附件。</p></details>
+<div class="copy-block diagnostic-prompt"><code>请检查这台电脑的 PIG 9.2.0 安装状态。先读取本机 PIG 配置目录中的 runtime.json 和 last_installation 报告，核对实际解释器、未完成阶段、官方 Tavotto 状态、当前连接及已批准的图稿目录。给我具体原因和推荐恢复动作；普通修复在本次范围内完成，不重复同一失败，不更改 Codex 权限模式或扩大目录授权，不上传私人数据。</code><button data-copy-from>复制诊断提示</button></div>
+</div></div></section>
 
       <section class="final-cta section-shell">
         <div>
@@ -542,12 +415,12 @@
     </main>
 
     <footer class="site-footer">
-      <div><strong>PIG Research Skills</strong><span>CHARLS · NHANES · NHANES–CHARLS · Seven Aging</span></div>
-      <p>四套 skill 共用证据优先的 <code>WF00–WF12</code> 研究工作流。</p>
+      <div><strong>PIG Research Skills</strong><span>临床 · 围术期 · 生物样本库 · 人群研究</span></div>
+      <p>适配 v9.2.0 · 更新于 2026-09-27 · 网页不读取或上传本地研究数据。</p>
       <a href="#top">回到顶部 ↑</a>
     </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite">已复制到剪贴板</div>
-    <script src="app.js"></script>
+    <script src="app.js?v=9.2.0" defer></script>
   </body>
 </html>
