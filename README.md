@@ -1,6 +1,6 @@
 # PIG Research Skills 9.2.0 教程
 
-中文客户指南，覆盖五个产品的 macOS / Windows x64 完整安装、首次 Tavotto 配置、研究选题与详细方案、三种推进方式、图表编辑及全文交付。
+中文客户指南，覆盖五个产品的 macOS / Windows x64 完整安装、研究选题与详细方案、三种推进方式、图表编辑及全文交付。
 
 线上地址：https://marvin-pig.github.io/pig-research-skills-guide/#install
 
