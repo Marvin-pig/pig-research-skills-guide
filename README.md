@@ -1,6 +1,6 @@
 # PIG Research Skills 9.2.0 教程
 
-中文客户指南，覆盖五个产品的 把完整 skill 文件夹交给本地 agent 安装与配置、研究选题与详细方案、三种推进方式、图表编辑及全文交付。
+中文客户指南，覆盖五个产品的本地 agent 安装与配置、研究选题与详细方案、三种推进方式、Tavotto 人工改图、可编辑统计表及全文交付。
 
 线上地址：https://marvin-pig.github.io/pig-research-skills-guide/#install
 
@@ -17,3 +17,5 @@ python3 -m http.server 8765 --bind 127.0.0.1
 `npm run build` 保留备用部署的 `dist/client` 和 `dist/server` 输出；GitHub Pages 直接读取根目录。维护记录、浏览器截图和验证日志保存在本仓库外。
 
 交付分别为 Windows x64 和 macOS 完整 skill ZIP，保留简单的 agent 安装提示词；各系统及 agent 的环境能力由使用者电脑上的实际检查确认。页面不将 macOS 本机验证表述为 Windows 执行成功。教程不扩展各数据库实际提供的数据范围，也不提供数据的公开下载或重新授权。
+
+Tavotto 说明从移除前版本恢复，并适配当前 agent 安装方式；用户无需 PIG 安装器。图形编辑按需打开，首次目录授权和宿主能力由真实连接核对。公开教程仍只展示五套产品。
