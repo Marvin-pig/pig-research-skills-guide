@@ -13,7 +13,7 @@
     <meta property="og:url" content="https://marvin-pig.github.io/pig-research-skills-guide/" />
     <meta name="twitter:card" content="summary" />
     <title>PIG Research Skills 9.2.0｜安装与研究教程</title>
-    <link rel="stylesheet" href="styles.css?v=9.2.0-guide6" />
+    <link rel="stylesheet" href="styles.css?v=9.2.0-guide7" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到正文</a>
@@ -80,7 +80,7 @@
 
       <section class="trust-strip" aria-label="产品特点">
         <div><strong>5</strong><span>套完整数据库 skill</span></div>
-        <div><strong>1</strong><span>份完整 skill · Windows / macOS 共用</span></div>
+        <div><strong>2</strong><span>种系统版本 · Windows / macOS 分别适配</span></div>
         <div><strong>本地</strong><span>真实数据与官方字段是最终准绳</span></div>
         <div><strong>可核查</strong><span>每个数字、图表和结论都能追溯</span></div>
       </section>
@@ -96,22 +96,22 @@
 </section>
 
       <section class="section section-soft" id="install"><div class="section-shell">
-  <div class="section-heading split-heading"><div><p class="eyebrow"><span></span> 9.2.0 安装与使用</p><h2>解压 skill，<br />一句话交给 agent 安装。</h2></div><p>使用 Codex 或具备本地文件和终端能力的 agent。提供文件夹的本地路径，让它完成安装、环境配置和检查。</p></div>
+  <div class="section-heading split-heading"><div><p class="eyebrow"><span></span> 9.2.0 安装与使用</p><h2>选对系统版本，<br />一句话交给 agent 安装。</h2></div><p>使用 Codex 或具备本地文件和终端能力的 agent。提供文件夹的本地路径，让它完成安装、环境配置和检查。</p></div>
   <div class="package-picker">
     <label for="package-select">你收到的是哪一套 skill？</label><select id="package-select"><option value="mimic-eicu-inspire-pig-skill">MIMIC · eICU · INSPIRE</option><option value="charls-pig">CHARLS</option><option value="nhanes-pig">NHANES</option><option value="nhanes-charls-pig">NHANES · CHARLS</option><option value="seven-aging-pig-skill">Seven Aging</option></select>
-    <p>向提供方获取有使用权限的 <strong>9.2.0 完整 skill ZIP</strong>，Windows 与 macOS 使用同一份。本教程不提供数据库下载。</p>
-    <div class="package-result" aria-live="polite"><span>完整 skill <code id="package-name">mimic-eicu-inspire-pig-skill.zip</code></span><p id="package-size">ZIP 约 25.30 GiB，解压约 25.30 GiB。</p></div>
+    <p>向提供方获取有使用权限的 <strong>9.2.0 完整 skill ZIP</strong>，按电脑系统选择 Windows 或 macOS 版。本教程不提供数据库下载。</p>
+    <div class="package-result" aria-live="polite"><span>Windows x64 <code id="package-windows">mimic-eicu-inspire-pig-skill-Windows-x64.zip</code></span><span>macOS <code id="package-mac">mimic-eicu-inspire-pig-skill-macOS.zip</code></span><p id="package-size">ZIP 约 25.30 GiB，解压约 25.30 GiB。</p></div>
     <p class="space-note">预留 ZIP、解压后的完整 skill、软件依赖和研究输出空间；如果 agent 另行复制到技能目录，还需要一份完整副本的空间。联合包已包含对应数据库，无需重复安装各单库包。</p>
   </div>
   <div class="quick-steps">
-    <article class="quick-step"><div class="step-index">1</div><div><span class="step-label">完整解压</span><h3>保留整个 skill 文件夹</h3><p>Windows 右键 ZIP → 全部解压；Mac 双击 ZIP 解压。找到含有 SKILL.md 的文件夹，保留其中的数据、脚本、字典和图册。</p></div></article>
+    <article class="quick-step"><div class="step-index">1</div><div><span class="step-label">完整解压</span><h3>保留整个 skill 文件夹</h3><p>Windows 选择 -Windows-x64.zip，右键 → 全部解压；Mac 选择 -macOS.zip，双击解压。找到含有 SKILL.md 的文件夹，保留其中的数据、脚本、字典和图册。</p></div></article>
     <article class="quick-step"><div class="step-index">2</div><div><span class="step-label">提供本地路径</span><h3>让 agent 在你的电脑上读取</h3><p>将文件夹路径粘贴到对话中，或通过 agent 的本地文件夹选择功能提供。无需把数据库上传为聊天附件。</p></div></article>
     <article class="quick-step"><div class="step-index">3</div><div><span class="step-label">发送下面一句话</span><h3>配置后检查实际功能</h3><p>agent 会读取包内说明，复用可用环境、补齐依赖，并检查取数、分析、绘图和文稿导出。完成后按提示重新打开会话并选择 skill。</p></div></article>
   </div>
   <div class="copy-block"><code>请把这个 skill 安装到当前 agent，配置所需运行环境，并检查能否正常使用。</code><button data-copy-from>复制安装提示词</button></div>
-  <aside class="plain-note"><span class="note-mark">i</span><div><strong>详细配置说明已经放在 skill 里。</strong><p>你只需提供文件夹和上面的提示词。首次配置软件依赖通常需要联网；已经配置好的本地分析可以离线使用。软件安装窗口或必须本人操作的步骤，由 agent 说明。</p></div></aside>
+  <aside class="plain-note"><span class="note-mark">i</span><div><strong>详细配置说明已经放在 skill 里。</strong><p>你只需提供对应系统的文件夹和上面的提示词。包内分别提供 Windows 与 macOS 的路径、研究入口及依赖说明。首次配置软件依赖通常需要联网；已经配置好的本地分析可以离线使用。软件安装窗口或必须本人操作的步骤，由 agent 说明。</p></div></aside>
   <details class="install-details"><summary>已经装过、换电脑或使用其他 agent？</summary><p>同样提供完整文件夹和这句提示词。已有可用环境优先复用；换电脑时在新系统上配置依赖。其他 agent 按自身规则发现 skill，并实际检查本地脚本执行和文件输出；仅能聊天的工具不能执行数据库分析。</p><p>包内“安装说明.md”面向使用者，“references/environment.md”供 agent 配置与核对。Codex 默认技能目录为当前用户的 .codex/skills，设置 CODEX_HOME 时使用其 skills 子目录。不要只复制 SKILL.md。</p></details>
-  <p class="validation-note">同一份源码与数据可跨系统交付；环境兼容性仍需在使用者电脑上检查。macOS 本机运行验证不能代替原生 Windows 或所有其他 agent 的验证。</p>
+  <p class="validation-note">两种包均含完整数据和研究功能，研究入口与配置说明按系统适配；环境兼容性仍需在使用者电脑上检查。macOS 本机运行验证不能代替原生 Windows 或所有其他 agent 的验证。</p>
 </div></section>
 
       <section class="section" id="start"><div class="section-shell">
@@ -390,7 +390,7 @@
       </section>
 
       <section class="section section-soft" id="faq"><div class="section-shell faq-layout">
-<div class="section-heading faq-heading"><p class="eyebrow"><span></span> 常见问题</p><h2>配置交给 agent，<br />研究从你的问题开始。</h2><p>软件环境按本机实际情况准备，研究以真实数据和明确方案推进。</p></div><div class="faq-list"><details open><summary>把文件夹提供给 agent 就可以了吗？<span>+</span></summary><p>提供本地文件夹路径，再发送上面的安装提示词。agent 需要放置完整 skill、配置依赖并实际检查功能；仅看到 skill 名称不代表环境已就绪。</p></details><details><summary>Windows 和 Mac 需要不同的包吗？<span>+</span></summary><p>现在使用同一份完整 skill ZIP。Python、R 及其他依赖由 agent 在当前系统上配置；不要把 Mac 的二进制环境复制到 Windows。</p></details><details><summary>我的电脑已经有 Python 和 R，还要重新安装吗？<span>+</span></summary><p>先检查并复用兼容环境，只补齐缺失或不兼容的依赖。已有软件不是错误，也不需要先卸载。</p></details><details><summary>配置中断或依赖下载失败怎么办？<span>+</span></summary><p>直接让当前 agent 检查实际错误并继续配置。已就绪部分可以复用，不用重新下载数据库。完成后让它说明哪些功能已验证，哪些仍未就绪。</p></details><details><summary>数据要依赖原始目录吗？可以离线研究吗？<span>+</span></summary><p>对应包已包含完整数据与必要字典，分析不依赖制作机器或原始数据目录。已配置的本地分析可以离线使用；软件依赖下载与近期文献检索需要联网。</p></details><details><summary>组学、影像或所有 MIMIC 数据都能直接分析吗？<span>+</span></summary><p>以包内实际数据为准：三库包中的 MIMIC 包含 MIMIC-IV 3.1 hosp 和 ICU，不能据此推断包含影像、文本、波形或组学。需要其他模块时先提供并完成相应适配。</p></details><details><summary>连续执行会直接做到论文吗？<span>+</span></summary><p>交付范围和推进方式分别确定。确认方案并明确要求做到全文后，助手完成该范围；只要求分析就停在分析。</p></details><details><summary>可以直接回复“1”吗？<span>+</span></summary><p>可以，当前选项清楚时数字或自然语言都有效。通常 1 是推荐，最后是自定义。连续执行中的进度建议不会撤销已有委托。</p></details><details><summary>使用其他 agent，需要额外适配吗？<span>+</span></summary><p>包内附有配置与验证说明，agent 按自己的技能目录和本地工具执行。不同产品的权限和工具能力不同，需由实际功能检查确认；不保证只有文本对话能力的工具也能完成研究。</p></details><details><summary>安装和验证文件会混进投稿包吗？<span>+</span></summary><p>配置和验证记录保存在 skill 外，研究过程与复现记录留在工作区；投稿目录只保留需要提交的稿件、定稿图表、补充材料与相应附件。</p></details><div class="copy-block diagnostic-prompt"><code>请检查这个 skill 的运行环境，解决未完成的配置，并验证能否正常使用。</code><button data-copy-from>复制检查提示词</button></div>
+<div class="section-heading faq-heading"><p class="eyebrow"><span></span> 常见问题</p><h2>配置交给 agent，<br />研究从你的问题开始。</h2><p>软件环境按本机实际情况准备，研究以真实数据和明确方案推进。</p></div><div class="faq-list"><details open><summary>把文件夹提供给 agent 就可以了吗？<span>+</span></summary><p>提供本地文件夹路径，再发送上面的安装提示词。agent 需要放置完整 skill、配置依赖并实际检查功能；仅看到 skill 名称不代表环境已就绪。</p></details><details><summary>Windows 和 Mac 需要不同的包吗？<span>+</span></summary><p>需要。请选择 -Windows-x64.zip 或 -macOS.zip。Windows 版使用 PowerShell/Python 入口，macOS 版使用 shell/Python 入口，路径与配置说明也分别适配。两种包均含完整数据；依赖由 agent 在对应系统配置，不能复制其他系统的二进制环境。</p></details><details><summary>我的电脑已经有 Python 和 R，还要重新安装吗？<span>+</span></summary><p>先检查并复用兼容环境，只补齐缺失或不兼容的依赖。已有软件不是错误，也不需要先卸载。</p></details><details><summary>配置中断或依赖下载失败怎么办？<span>+</span></summary><p>直接让当前 agent 检查实际错误并继续配置。已就绪部分可以复用，不用重新下载数据库。完成后让它说明哪些功能已验证，哪些仍未就绪。</p></details><details><summary>数据要依赖原始目录吗？可以离线研究吗？<span>+</span></summary><p>对应包已包含完整数据与必要字典，分析不依赖制作机器或原始数据目录。已配置的本地分析可以离线使用；软件依赖下载与近期文献检索需要联网。</p></details><details><summary>组学、影像或所有 MIMIC 数据都能直接分析吗？<span>+</span></summary><p>以包内实际数据为准：三库包中的 MIMIC 包含 MIMIC-IV 3.1 hosp 和 ICU，不能据此推断包含影像、文本、波形或组学。需要其他模块时先提供并完成相应适配。</p></details><details><summary>连续执行会直接做到论文吗？<span>+</span></summary><p>交付范围和推进方式分别确定。确认方案并明确要求做到全文后，助手完成该范围；只要求分析就停在分析。</p></details><details><summary>可以直接回复“1”吗？<span>+</span></summary><p>可以，当前选项清楚时数字或自然语言都有效。通常 1 是推荐，最后是自定义。连续执行中的进度建议不会撤销已有委托。</p></details><details><summary>使用其他 agent，需要额外适配吗？<span>+</span></summary><p>包内附有配置与验证说明，agent 按自己的技能目录和本地工具执行。不同产品的权限和工具能力不同，需由实际功能检查确认；不保证只有文本对话能力的工具也能完成研究。</p></details><details><summary>安装和验证文件会混进投稿包吗？<span>+</span></summary><p>配置和验证记录保存在 skill 外，研究过程与复现记录留在工作区；投稿目录只保留需要提交的稿件、定稿图表、补充材料与相应附件。</p></details><div class="copy-block diagnostic-prompt"><code>请检查这个 skill 的运行环境，解决未完成的配置，并验证能否正常使用。</code><button data-copy-from>复制检查提示词</button></div>
 </div></div></section>
 
       <section class="final-cta section-shell">
@@ -410,6 +410,6 @@
     </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite">已复制到剪贴板</div>
-    <script src="app.js?v=9.2.0-guide6" defer></script>
+    <script src="app.js?v=9.2.0-guide7" defer></script>
   </body>
 </html>

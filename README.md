@@ -16,4 +16,4 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 `npm run build` 保留备用部署的 `dist/client` 和 `dist/server` 输出；GitHub Pages 直接读取根目录。维护记录、浏览器截图和验证日志保存在本仓库外。
 
-交付为同一份跨平台源码与数据 ZIP；各系统及 agent 的环境能力由使用者电脑上的实际检查确认。页面不将 macOS 本机验证表述为 Windows 执行成功。教程不扩展各数据库实际提供的数据范围，也不提供数据的公开下载或重新授权。
+交付分别为 Windows x64 和 macOS 完整 skill ZIP，保留简单的 agent 安装提示词；各系统及 agent 的环境能力由使用者电脑上的实际检查确认。页面不将 macOS 本机验证表述为 Windows 执行成功。教程不扩展各数据库实际提供的数据范围，也不提供数据的公开下载或重新授权。

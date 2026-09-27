@@ -142,8 +142,9 @@ updatePrompt();
 
 function updatePackage() {
   const name=document.getElementById("package-select").value;const [zip,expanded]=packageSizes[name];
-  document.getElementById("package-name").textContent=`${name}.zip`;
-  document.getElementById("package-size").textContent=`每个 ZIP 约 ${zip.toFixed(2)} GiB，解压约 ${expanded.toFixed(2)} GiB。Windows 与 macOS 共用完整 skill。`;
+  document.getElementById("package-windows").textContent=`${name}-Windows-x64.zip`;
+  document.getElementById("package-mac").textContent=`${name}-macOS.zip`;
+  document.getElementById("package-size").textContent=`每个 ZIP 约 ${zip.toFixed(2)} GiB，解压约 ${expanded.toFixed(2)} GiB。按电脑系统选择一份，两种包均含完整数据。`;
 }
 document.getElementById("package-select").addEventListener("change",updatePackage);
 updatePackage();
