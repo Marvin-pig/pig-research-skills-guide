@@ -43,11 +43,11 @@ const stageData = [
 ];
 
 const skillText = {
-  criticalcare: "mimic-eicu-inspire-pig-skill", mimic: "mimic-pig-skill", ukb: "ukb-pig-skill",
+  criticalcare: "mimic-eicu-inspire-pig-skill", mimic: "mimic-pig-skill",
   charls: "charls-pig", nhanes: "nhanes-pig", "nhanes-charls": "nhanes-charls-pig", "seven-aging": "seven-aging-pig-skill"
 };
 const packageSizes = {
-  "mimic-eicu-inspire-pig-skill": [25.30,25.30], "mimic-pig-skill": [13.67,13.67], "ukb-pig-skill": [19.78,20.24],
+  "mimic-eicu-inspire-pig-skill": [25.30,25.30], "mimic-pig-skill": [13.67,13.67],
   "charls-pig": [0.45,0.57], "nhanes-pig": [2.95,3.30], "nhanes-charls-pig": [3.16,3.60], "seven-aging-pig-skill": [6.25,7.84]
 };
 const situationText = { idea: "我目前只有一个研究想法", protocol: "我已经有一份研究方案", project: "我已经有一个进行中的项目", paper: "我已经有一份论文材料" };

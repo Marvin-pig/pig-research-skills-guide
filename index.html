@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="PIG Research Skills 使用指南与教程：适配 PIG 9.2.0 七套数据库 skill：macOS / Windows 完整安装、Tavotto 人工改图、选题到完整论文。"
+      content="PIG Research Skills 使用指南与教程：适配 PIG 9.2.0 六套数据库 skill：macOS / Windows 完整安装、Tavotto 人工改图、选题到完整论文。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="PIG Research Skills 9.2.0｜安装与研究教程" />
@@ -13,7 +13,7 @@
     <meta property="og:url" content="https://marvin-pig.github.io/pig-research-skills-guide/" />
     <meta name="twitter:card" content="summary" />
     <title>PIG Research Skills 9.2.0｜安装与研究教程</title>
-    <link rel="stylesheet" href="styles.css?v=9.2.0" />
+    <link rel="stylesheet" href="styles.css?v=9.2.0-guide2" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到正文</a>
@@ -23,7 +23,7 @@
         <span class="brand-mark" aria-hidden="true">P</span>
         <span>
           <strong>PIG Research Skills</strong>
-          <small>七套数据库 skill · v9.2.0</small>
+          <small>六套数据库 skill · v9.2.0</small>
         </span>
       </a>
       <nav class="top-nav" aria-label="主导航">
@@ -40,7 +40,7 @@
       <noscript><p class="section-shell">安装与研究教程可直接阅读。启用 JavaScript 后可切换产品文件名、研究阶段并生成或复制提示词。</p></noscript>
       <section class="hero section-shell" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> 临床 · 围术期 · 生物样本库 · 人群研究</p>
+          <p class="eyebrow"><span></span> 临床 · 围术期 · 人群研究</p>
           <h1 id="hero-title">把一句研究想法，<br /><em>变成经得起检查的结果。</em></h1>
           <p class="hero-lead">
             一次完整安装，把研究问题、数据核查、统计图表和论文写作连起来。你决定研究范围和参与方式，助手在真实证据上推进。
@@ -51,7 +51,7 @@
           </div>
           <div class="hero-note">
             <span class="pulse-dot" aria-hidden="true"></span>
-            当前教程覆盖 <strong>7 套 PIG Skill · v9.2.0</strong>
+            当前教程覆盖 <strong>6 套 PIG Skill · v9.2.0</strong>
           </div>
         </div>
 
@@ -86,14 +86,13 @@
       </section>
 
       <section class="section section-shell" id="what-is-it">
-  <div class="section-heading split-heading"><div><p class="eyebrow"><span></span> 选择数据库</p><h2>七个入口，<br />按研究问题选一套。</h2></div><p>联合包已经包含对应数据库，无需同时安装各单库包。不同数据库中的人并不能直接互认；INSPIRE 的手术也不能直接当成 ICU stay。</p></div>
+  <div class="section-heading split-heading"><div><p class="eyebrow"><span></span> 选择数据库</p><h2>六个入口，<br />按研究问题选一套。</h2></div><p>联合包已经包含对应数据库，无需同时安装各单库包。不同数据库中的人并不能直接互认；INSPIRE 的手术也不能直接当成 ICU stay。</p></div>
   <div class="capability-grid product-grid"><article class="capability-card card-featured"><span class="card-number">01</span><h3>MIMIC · eICU · INSPIRE</h3><p>重症与围术期研究。内置 MIMIC-IV 3.1、eICU-CRD 2.0、INSPIRE 1.4.2；可选单库或设计驱动的跨库验证。</p><code class="card-tag">$mimic-eicu-inspire-pig-skill</code></article>
 <article class="capability-card "><span class="card-number">02</span><h3>MIMIC-IV</h3><p>面向 MIMIC-IV 3.1 hosp 与 ICU 数据，核对患者、住院和 ICU stay 的层级与时间关系。</p><code class="card-tag">$mimic-pig-skill</code></article>
-<article class="capability-card "><span class="card-number">03</span><h3>UK Biobank</h3><p>支持包内表型、登记事件、重复测量、蛋白组、代谢组与 PRS；以实际字段及样本覆盖为准。</p><code class="card-tag">$ukb-pig-skill</code></article>
-<article class="capability-card "><span class="card-number">04</span><h3>CHARLS</h3><p>中国中老年人群的横断面与纵向研究，关注波次、抽样权重、失访与测量差异。</p><code class="card-tag">$charls-pig</code></article>
-<article class="capability-card "><span class="card-number">05</span><h3>NHANES</h3><p>美国健康与营养调查，核对调查周期、组件、SEQN、复杂抽样与适用权重。</p><code class="card-tag">$nhanes-pig</code></article>
-<article class="capability-card "><span class="card-number">06</span><h3>NHANES · CHARLS</h3><p>两库各有明确科学角色时，分别估计、比较或复制；不默认直接拼接个体记录。</p><code class="card-tag">$nhanes-charls-pig</code></article>
-<article class="capability-card "><span class="card-number">07</span><h3>Seven Aging</h3><p>从七个老年数据库中选择有依据的组合，开展跨国比较、复制或两阶段综合。</p><code class="card-tag">$seven-aging-pig-skill</code></article></div>
+<article class="capability-card "><span class="card-number">03</span><h3>CHARLS</h3><p>中国中老年人群的横断面与纵向研究，关注波次、抽样权重、失访与测量差异。</p><code class="card-tag">$charls-pig</code></article>
+<article class="capability-card "><span class="card-number">04</span><h3>NHANES</h3><p>美国健康与营养调查，核对调查周期、组件、SEQN、复杂抽样与适用权重。</p><code class="card-tag">$nhanes-pig</code></article>
+<article class="capability-card "><span class="card-number">05</span><h3>NHANES · CHARLS</h3><p>两库各有明确科学角色时，分别估计、比较或复制；不默认直接拼接个体记录。</p><code class="card-tag">$nhanes-charls-pig</code></article>
+<article class="capability-card "><span class="card-number">06</span><h3>Seven Aging</h3><p>从七个老年数据库中选择有依据的组合，开展跨国比较、复制或两阶段综合。</p><code class="card-tag">$seven-aging-pig-skill</code></article></div>
   <aside class="plain-note"><span class="note-mark">i</span><div><strong>工具能力与数据范围分别核对。</strong><p>MIMIC 的住院与 ICU 表不等于已包含影像、波形、病历文本或组学文件。新增数据模块需另行提供并核对；字段存在也不等于研究已经可行。</p></div></aside>
 </section>
 
@@ -101,7 +100,7 @@
 <div class="section-shell">
   <div class="section-heading split-heading"><div><p class="eyebrow"><span></span> 9.2.0 完整安装</p><h2>选对系统包，<br />运行一次完整安装。</h2></div><p>适用于 Codex 桌面应用。安装器准备本包登记的研究环境与官方 Tavotto；之后无需再单独适配 Tavotto。先<a href="https://developers.openai.com/codex/app/">安装并登录 Codex</a>，首次安装保持联网。</p></div>
   <div class="package-picker">
-    <label for="package-select">你收到的是哪一套 skill？</label><select id="package-select"><option value="mimic-eicu-inspire-pig-skill">MIMIC · eICU · INSPIRE</option><option value="mimic-pig-skill">MIMIC-IV</option><option value="ukb-pig-skill">UK Biobank</option><option value="charls-pig">CHARLS</option><option value="nhanes-pig">NHANES</option><option value="nhanes-charls-pig">NHANES · CHARLS</option><option value="seven-aging-pig-skill">Seven Aging</option></select>
+    <label for="package-select">你收到的是哪一套 skill？</label><select id="package-select"><option value="mimic-eicu-inspire-pig-skill">MIMIC · eICU · INSPIRE</option><option value="mimic-pig-skill">MIMIC-IV</option><option value="charls-pig">CHARLS</option><option value="nhanes-pig">NHANES</option><option value="nhanes-charls-pig">NHANES · CHARLS</option><option value="seven-aging-pig-skill">Seven Aging</option></select>
     <p>向提供方获取有使用权限的 <strong>9.2.0 系统专用完整 ZIP</strong>。本教程不提供数据库下载。</p>
     <div class="package-result" aria-live="polite"><span>macOS <code id="package-mac">mimic-eicu-inspire-pig-skill-macOS.zip</code></span><span>Windows x64 <code id="package-windows">mimic-eicu-inspire-pig-skill-Windows-x64.zip</code></span><p id="package-size">每个 ZIP 约 25.30 GiB，解压约 25.30 GiB。</p></div>
     <p class="space-note">空间按 ZIP + 解压副本 + 安装副本计算，另给软件依赖及研究输出留余量；建议在 ZIP 和解压目录之外，再预留至少一份解压体积加 10 GiB。多个 skill 共用软件环境，但各有完整数据副本。</p>
@@ -201,7 +200,6 @@
               <div class="choice-row skill-choice-row" data-choice="skill">
                 <button type="button" class="choice is-selected" data-value="criticalcare">临床三库</button>
                 <button type="button" class="choice" data-value="mimic">MIMIC-IV</button>
-                <button type="button" class="choice" data-value="ukb">UK Biobank</button>
                 <button type="button" class="choice" data-value="charls">CHARLS</button>
                 <button type="button" class="choice" data-value="nhanes">NHANES</button>
                 <button type="button" class="choice" data-value="nhanes-charls">NHANES–CHARLS</button>
@@ -400,7 +398,7 @@
       </section>
 
       <section class="section section-soft" id="faq"><div class="section-shell faq-layout">
-<div class="section-heading faq-heading"><p class="eyebrow"><span></span> 常见问题与恢复</p><h2>从哪里继续，<br />这里说清楚。</h2><p>先看实际安装状态与失败阶段，避免反复手工配置。</p></div><div class="faq-list"><details open><summary>只有拖入文件夹，没有运行安装入口，算完成了吗？<span>+</span></summary><p>文件夹能被发现，不代表软件环境和 Tavotto 已准备好。请用 9.2.0 系统专用 ZIP 的外层安装入口补齐；以 Full installation COMPLETE 为完成标志。</p></details><details ><summary>Tavotto 要另外安装吗？一定要改 Codex 权限吗？<span>+</span></summary><p>完整首装已包含官方插件、引擎、启动命令与专用图稿目录配置。首次核对并批准一个具体目录即可，保留 Codex 高权限模式；安装后彻底重启应用。更换或迁移图稿目录时，重新确认新范围。</p></details><details ><summary>编辑时提示目录拒绝，但没有看到权限弹窗？<span>+</span></summary><p>先确认完整安装是否成功、是否彻底重启 Codex，以及图稿是否在首次已批准的目录中。这个返回不能证明你点过拒绝。让助手查看当前连接与安装记录；同一原因不反复重试。目录移动或外接盘未挂载时，恢复原位置或重新运行安装器确认新位置。</p></details><details ><summary>Mac 提示无法打开脚本，或 Windows 阻止运行？<span>+</span></summary><p>确认使用对应系统的包且已经完整解压。Mac 可在系统允许的情况下右键打开，或在终端用 sh 执行 Install.command。Windows 使用 Install.cmd，它仅为本次 PowerShell 进程设置执行策略；组织策略仍需按所在单位要求处理，不要求关闭系统安全保护。</p></details><details ><summary>安装中断或长时间停在依赖准备怎么办？<span>+</span></summary><p>首次下载 R、科研及图册依赖可能较久，保持窗口打开并查看当前阶段和日志。INCOMPLETE 会指出失败位置；恢复网络或完成官方系统窗口后，重跑同一入口继续。把下面的诊断提示发给本地 Codex，无需将数据上传到网页。</p></details><details ><summary>数据要依赖原始目录吗？可以离线研究吗？<span>+</span></summary><p>对应包内已包含完整数据与必要字典，分析不依赖制作机器或原始数据目录。已配置的本地分析环境可以离线使用；首次安装软件、检索近期文献和其他网络工具需要联网。</p></details><details ><summary>组学、影像或“所有 MIMIC 数据”都能直接分析吗？<span>+</span></summary><p>以包内实际数据为准：MIMIC 单库版包含 MIMIC-IV 3.1 hosp 和 ICU，不能据此推断有影像、文本、波形或组学。UKB 的组学能力也受实际字段和样本覆盖限制。需要其他模块时先提供并完成相应适配。</p></details><details ><summary>连续执行会直接做到论文吗？<span>+</span></summary><p>交付范围和推进方式分别确定。你看过方案后明确要求做到全文，助手就完成该范围；只要求分析就停在分析。不会强制每次停在方法与结果，也不会把一句选题当作全流程授权。</p></details><details ><summary>可以直接回复“1”吗？<span>+</span></summary><p>可以，当前选项清楚时数字或自然语言都有效。通常 1 是推荐，最后是自定义。需要选择时等待真实回复；连续执行中的进度建议不会撤销已有委托。</p></details><details ><summary>为什么有字段仍不能直接做研究？<span>+</span></summary><p>还需核对编码、单位、测量时点、观察单位、可分析人数、事件和缺失。跨库先确定每个数据库的角色及可比性；独立数据库不自动合并患者，INSPIRE 手术层级也不等同于 ICU 层级。</p></details><details ><summary>使用其他 Agent 或换电脑怎么办？<span>+</span></summary><p>新电脑选择对应系统 ZIP 重新完整安装。当前完整安装器面向 Codex；其他 Agent 的技能发现、MCP 工具与图形显示需单独核对，不能只替换名称就认定兼容。</p></details><details ><summary>安装和验证文件会混进投稿包吗？<span>+</span></summary><p>不会作为投稿内容收进去。软件环境和安装日志在本机 PIG 配置目录，研究过程与复现记录放工作区；投稿目录只保留需要提交的稿件、定稿图表、补充材料与相应附件。</p></details>
+<div class="section-heading faq-heading"><p class="eyebrow"><span></span> 常见问题与恢复</p><h2>从哪里继续，<br />这里说清楚。</h2><p>先看实际安装状态与失败阶段，避免反复手工配置。</p></div><div class="faq-list"><details open><summary>只有拖入文件夹，没有运行安装入口，算完成了吗？<span>+</span></summary><p>文件夹能被发现，不代表软件环境和 Tavotto 已准备好。请用 9.2.0 系统专用 ZIP 的外层安装入口补齐；以 Full installation COMPLETE 为完成标志。</p></details><details ><summary>Tavotto 要另外安装吗？一定要改 Codex 权限吗？<span>+</span></summary><p>完整首装已包含官方插件、引擎、启动命令与专用图稿目录配置。首次核对并批准一个具体目录即可，保留 Codex 高权限模式；安装后彻底重启应用。更换或迁移图稿目录时，重新确认新范围。</p></details><details ><summary>编辑时提示目录拒绝，但没有看到权限弹窗？<span>+</span></summary><p>先确认完整安装是否成功、是否彻底重启 Codex，以及图稿是否在首次已批准的目录中。这个返回不能证明你点过拒绝。让助手查看当前连接与安装记录；同一原因不反复重试。目录移动或外接盘未挂载时，恢复原位置或重新运行安装器确认新位置。</p></details><details ><summary>Mac 提示无法打开脚本，或 Windows 阻止运行？<span>+</span></summary><p>确认使用对应系统的包且已经完整解压。Mac 可在系统允许的情况下右键打开，或在终端用 sh 执行 Install.command。Windows 使用 Install.cmd，它仅为本次 PowerShell 进程设置执行策略；组织策略仍需按所在单位要求处理，不要求关闭系统安全保护。</p></details><details ><summary>安装中断或长时间停在依赖准备怎么办？<span>+</span></summary><p>首次下载 R、科研及图册依赖可能较久，保持窗口打开并查看当前阶段和日志。INCOMPLETE 会指出失败位置；恢复网络或完成官方系统窗口后，重跑同一入口继续。把下面的诊断提示发给本地 Codex，无需将数据上传到网页。</p></details><details ><summary>数据要依赖原始目录吗？可以离线研究吗？<span>+</span></summary><p>对应包内已包含完整数据与必要字典，分析不依赖制作机器或原始数据目录。已配置的本地分析环境可以离线使用；首次安装软件、检索近期文献和其他网络工具需要联网。</p></details><details ><summary>组学、影像或“所有 MIMIC 数据”都能直接分析吗？<span>+</span></summary><p>以包内实际数据为准：MIMIC 单库版包含 MIMIC-IV 3.1 hosp 和 ICU，不能据此推断有影像、文本、波形或组学。需要其他模块时先提供并完成相应适配。</p></details><details ><summary>连续执行会直接做到论文吗？<span>+</span></summary><p>交付范围和推进方式分别确定。你看过方案后明确要求做到全文，助手就完成该范围；只要求分析就停在分析。不会强制每次停在方法与结果，也不会把一句选题当作全流程授权。</p></details><details ><summary>可以直接回复“1”吗？<span>+</span></summary><p>可以，当前选项清楚时数字或自然语言都有效。通常 1 是推荐，最后是自定义。需要选择时等待真实回复；连续执行中的进度建议不会撤销已有委托。</p></details><details ><summary>为什么有字段仍不能直接做研究？<span>+</span></summary><p>还需核对编码、单位、测量时点、观察单位、可分析人数、事件和缺失。跨库先确定每个数据库的角色及可比性；独立数据库不自动合并患者，INSPIRE 手术层级也不等同于 ICU 层级。</p></details><details ><summary>使用其他 Agent 或换电脑怎么办？<span>+</span></summary><p>新电脑选择对应系统 ZIP 重新完整安装。当前完整安装器面向 Codex；其他 Agent 的技能发现、MCP 工具与图形显示需单独核对，不能只替换名称就认定兼容。</p></details><details ><summary>安装和验证文件会混进投稿包吗？<span>+</span></summary><p>不会作为投稿内容收进去。软件环境和安装日志在本机 PIG 配置目录，研究过程与复现记录放工作区；投稿目录只保留需要提交的稿件、定稿图表、补充材料与相应附件。</p></details>
 <div class="copy-block diagnostic-prompt"><code>请检查这台电脑的 PIG 9.2.0 安装状态。先读取本机 PIG 配置目录中的 runtime.json 和 last_installation 报告，核对实际解释器、未完成阶段、官方 Tavotto 状态、当前连接及已批准的图稿目录。给我具体原因和推荐恢复动作；普通修复在本次范围内完成，不重复同一失败，不更改 Codex 权限模式或扩大目录授权，不上传私人数据。</code><button data-copy-from>复制诊断提示</button></div>
 </div></div></section>
 
@@ -415,12 +413,12 @@
     </main>
 
     <footer class="site-footer">
-      <div><strong>PIG Research Skills</strong><span>临床 · 围术期 · 生物样本库 · 人群研究</span></div>
+      <div><strong>PIG Research Skills</strong><span>临床 · 围术期 · 人群研究</span></div>
       <p>适配 v9.2.0 · 更新于 2026-09-27 · 网页不读取或上传本地研究数据。</p>
       <a href="#top">回到顶部 ↑</a>
     </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite">已复制到剪贴板</div>
-    <script src="app.js?v=9.2.0" defer></script>
+    <script src="app.js?v=9.2.0-guide2" defer></script>
   </body>
 </html>
