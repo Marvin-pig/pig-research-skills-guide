@@ -352,7 +352,7 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
 
-/* 9.2.0: full installation, six products and optional figure editing. */
+/* 9.2.0: full installation, five products and optional figure editing. */
 [hidden] { display: none !important; }
 section[id] { scroll-margin-top: 110px; }
 button, select, summary { touch-action: manipulation; }
