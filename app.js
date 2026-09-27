@@ -71,17 +71,24 @@ function showToast(message = "已复制到剪贴板") {
   clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2200);
 }
 async function copyText(text) {
-  try { await navigator.clipboard.writeText(text); showToast(); }
-  catch {
-    const previous = document.activeElement;
-    const input = document.createElement("textarea");
-    input.value = text; input.style.position = "fixed"; input.style.opacity = "0";
-    document.body.appendChild(input); input.select();
-    let copied = false;
-    try { copied = document.execCommand("copy"); } catch { /* Show an honest manual-copy fallback below. */ }
-    input.remove(); previous?.focus();
-    showToast(copied ? "已复制到剪贴板" : "未能自动复制，请选中文字后复制");
-  }
+  // Keep copying available for local HTML files and embedded browsers too.
+  const previous = document.activeElement;
+  const input = document.createElement("textarea");
+  input.value = text; input.style.position = "fixed"; input.style.opacity = "0";
+  document.body.appendChild(input); input.select();
+  let copied = false;
+  try { copied = document.execCommand("copy"); } catch { /* Try the async API below. */ }
+  input.remove(); previous?.focus();
+  if (copied) { showToast(); return; }
+  let timer;
+  try {
+    await Promise.race([
+      navigator.clipboard.writeText(text),
+      new Promise((_, reject) => { timer=setTimeout(() => reject(new Error("Clipboard unavailable")),1500); })
+    ]);
+    showToast();
+  } catch { showToast("未能自动复制，请选中文字后复制"); }
+  finally { clearTimeout(timer); }
 }
 document.querySelectorAll("[data-copy]").forEach(button => button.addEventListener("click", () => copyText(button.dataset.copy)));
 document.querySelectorAll("[data-copy-from]").forEach(button => button.addEventListener("click", () => copyText(button.closest(".copy-block").querySelector("code").textContent.trim())));
@@ -135,9 +142,8 @@ updatePrompt();
 
 function updatePackage() {
   const name=document.getElementById("package-select").value;const [zip,expanded]=packageSizes[name];
-  document.getElementById("package-mac").textContent=`${name}-macOS.zip`;
-  document.getElementById("package-windows").textContent=`${name}-Windows-x64.zip`;
-  document.getElementById("package-size").textContent=`每个 ZIP 约 ${zip.toFixed(2)} GiB，解压约 ${expanded.toFixed(2)} GiB。两个系统包各含完整数据。`;
+  document.getElementById("package-name").textContent=`${name}.zip`;
+  document.getElementById("package-size").textContent=`每个 ZIP 约 ${zip.toFixed(2)} GiB，解压约 ${expanded.toFixed(2)} GiB。Windows 与 macOS 共用完整 skill。`;
 }
 document.getElementById("package-select").addEventListener("change",updatePackage);
 updatePackage();
